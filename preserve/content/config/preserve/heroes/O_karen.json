@@ -1,0 +1,73 @@
+{
+	"o_karen" :
+	{
+    "class": "bard",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "Karen",
+			"biography" : "Karen used to come across with a prince who from neighbouring country, the prince promised her to become his wife. However, she was told that the prince had been dead while the guards found her, and as a last wish, the prince wanted Karen to be the sacrifice for him. She used her magic to escape while the guards locked her house and burnt it. After this, the girl has changed a lot.",
+			"specialty" :
+			{
+				"description" : "{Gold}\r\n\r\nIncreases kingdom's gold production by 350 per day.",
+				"tooltip" : "Bonus: resource",
+				"name" : "+350 Gold"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/karen/UN32T194.bmp",
+			"specialtyLarge" : "preserve/heroes/karen/UN44T194.bmp",
+			"large" : "preserve/heroes/karen/HPL006BR.bmp",
+			"small" : "preserve/heroes/karen/HPS006BR.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "estates"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		
+		"specialty": //estate bonus
+		[
+			{
+				"bonuses":
+				[
+					{
+						"type": "GENERATE_RESOURCE",
+						"subtype": "resource.gold",
+						"val": 350
+					}
+				]
+			}
+		]
+	}
+}
+

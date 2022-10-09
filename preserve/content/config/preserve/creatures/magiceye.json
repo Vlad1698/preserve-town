@@ -1,0 +1,67 @@
+{
+	"magiceye":
+	{
+		"name" :
+		{
+			"plural" : "Wasps",
+			"singular" : "Wasp"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "preserve",
+		"aiValue" : 305,
+		"attack" : 9,
+		"cost" :
+		{
+			"gold" : 200
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 5,
+		"fightValue" : 305,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C3Meye.def",
+			"map" : "preserve/map/creatures/AVWC167.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS167P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL167P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			},
+	       },
+		"growth" : 7,
+		"hitPoints" : 20,
+		"level" : 3,
+		"upgrades":
+		[
+			"misfortuneeye"
+		],
+		"sound" :
+		{
+			"attack": "preserve/S167ATTK.wav",
+			"defend" : "preserve/S167DFND.wav",
+			"killed" : "preserve/S167KILL.wav",
+			"move" : "preserve/S167MOVE.wav",
+			"wince" : "preserve/S167WNCE.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+					"canFly" : 
+			{
+				"type" : "FLYING"
+			}
+		}
+	}
+}

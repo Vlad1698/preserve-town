@@ -1,0 +1,69 @@
+{
+  "extra1benu": {
+    "name": {
+      "plural": "Benus",
+      "singular": "Benu"
+    },
+    "advMapAmount": {
+ "max" : 12,
+ "min" : 8
+    },
+    "faction": "preserve",
+    "aiValue": 1360,
+	"special" : true,
+    "attack": 15,
+    "cost": {
+      "gold": 700
+    },
+    "damage": {
+ "max" : 40,
+ "min" : 27
+    },
+    "defense": 15,
+    "fightValue": 1234,
+    "graphics": {
+      "animation": "preserve/battle/creatures/Z1Benu.def",
+      "map": "preserve/map/creatures/AVWC172.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrSEX1P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrLEX1P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.25,
+        "attack": 1,
+        "idle": 10,
+        "flight": 1
+      }
+    },
+    "doubleWide": true,
+    "growth": 1,
+    "hitPoints": 140,
+    "level": 7,
+    "sound": {
+      "attack": "preserve/S172ATTK.wav",
+      "defend": "preserve/S172DFND.wav",
+      "killed": "preserve/S172KILL.wav",
+      "move": "preserve/S172MOVE.wav",
+      "wince": "preserve/S172WNCE.wav"
+    },
+    "speed": 16,
+    "abilities": {
+      "canFly": {
+        "type": "FLYING"
+      },
+	  "advancedSlayer" : { "type" : "KING2" },
+	  "fireBreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 15
+			},
+      "regenerates" :
+			{
+				"type" : "FULL_HP_REGENERATION"
+			}
+    }
+  }
+}

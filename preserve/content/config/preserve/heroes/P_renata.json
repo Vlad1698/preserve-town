@@ -1,0 +1,77 @@
+{
+	"p_renata" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Renata",
+			"biography" : "As a bard, Renata loves music and she supposes music is life. Due to her lonely life, she decides to find a new lifestyle. However, no one knows she still worry about her little sister, Lynn, who dispeared when she was a child.",
+			"specialty" :
+			{
+				"description" : "{Mirth}\r\n\r\nCast Mirth at the beggining of battle.",
+				"tooltip" : "Bonus: spell",
+				"name" : "Mirth"
+			}
+		},
+
+    "images": {
+      "specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
+      "specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
+      "large": "preserve/heroes/renata/HPL007BR.bmp",
+      "small": "preserve/heroes/renata/HPS007BR.bmp"
+    },
+    
+    "spellbook" :
+		[
+			"mirth"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 6
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			}
+		],
+		"specialty": 
+		[
+			{
+				"bonuses":
+				[
+					{
+						"type": "OPENING_BATTLE_SPELL",
+						"subtype": "spell.mirth",
+						"val" : 3,
+						"valueType" : "BASE_NUMBER"
+					}
+				]
+			}
+		]
+	}
+}
+
+

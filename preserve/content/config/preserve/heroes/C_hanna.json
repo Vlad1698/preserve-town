@@ -1,0 +1,80 @@
+{
+	"c_hanna" :
+	{
+    "class": "guardian",
+    "female" : true,
+		
+		"texts" :
+		{
+			"name" : "Hanna",
+			"biography" : "Hanna did not like speaking with others and she can thought silently for whole day. When her companions went to battlefields she still stayed home. While all individuals become victims due to the war, she began to hate the war and the governor of Avlee. In her vie, there is no justice in any battle.",
+			"specialty" :
+			{
+				"description" : "{Armorer}\r\n\r\nReceives a 5% per level bonus to Armorer skill percentage.",
+				"tooltip" : "Bonus: secondary skill",
+				"name" : "Armorer"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/hanna/Un32Defe.bmp",
+			"specialtyLarge" : "preserve/heroes/hanna/Un44Defe.bmp",
+			"large" : "preserve/heroes/hanna/HPL002GN.bmp",
+			"small" : "preserve/heroes/hanna/HPS002GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			}
+		],
+		
+		"specialty": //defense bonus
+		[
+			{
+				"growsWithLevel" : true,
+				"bonuses":
+				[
+					{
+						"type": "SPECIAL_SECONDARY_SKILL", //give 5% to this skill with each level
+						"subtype": "skill.armorer",
+						"val": 5
+					},
+					{
+						"type": "SECONDARY_SKILL_PREMY", //used for first level
+						"subtype": "skill.armorer",
+						"val": 5,
+						"valueType": "PERCENT_TO_BASE"
+					}
+				]
+			}
+		]
+	}
+}
+

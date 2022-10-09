@@ -1,0 +1,67 @@
+{
+	"fairybear":
+	{
+		"name" :
+		{
+			"plural" : "Furbolgs",
+			"singular" : "Furbolg"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 12,
+			 "min" : 5
+		},
+		"faction" : "preserve",
+		"aiValue" : 1554,
+		"attack" : 16,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 16,
+		"fightValue" : 1341,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C6Bear.def",
+      "map": "preserve/map/creatures/AVWC173.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS173P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL173P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10,
+        "flight": 1.5
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 2,
+		"hitPoints" : 90,
+		"level" : 6,
+		"upgrades":
+		[
+			"mysticalbear"
+		],
+		"sound" :
+		{
+			"attack" : "preserve/S173ATTK.wav",
+			"defend" : "preserve/S173DFND.wav",
+			"killed" : "preserve/S173KILL.wav",
+			"move" : "preserve/S173MOVE.wav",
+			"wince" : "preserve/S173WNCE.wav"
+ 		},
+		"speed" : 6,
+    "abilities":
+      {
+		"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			}
+	    }
+	}
+}

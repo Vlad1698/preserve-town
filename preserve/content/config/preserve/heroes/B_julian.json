@@ -1,0 +1,102 @@
+{
+	"b_julian" :
+	{
+    "class": "guardian",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Julian",
+			"biography" : "Julian expected to tame the hippogryphs to be the powerful troops for Avlee, but Gelu, the king of elves, disagreed. He felt no longer be trusted by elves and he sweared to leave Avlee and return as conqueror. His hippogryphs prepare for revenge anytime.",
+			"specialty" :
+			{
+				"description" : "{Hippogryphs}\r\n\r\nIncreases Speed of any Hippogryphs or Grim Hippogryphs by 1 and their Attack and Defense skills by 5% for every 5 levels (rounded up).",
+				"tooltip" : "Bonus: creature",
+				"name" : "Hippogryphs"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/julian/UN32hipp.bmp",
+			"specialtyLarge" : "preserve/heroes/julian/UN44hipp.bmp",
+			"large" : "preserve/heroes/julian/HPL001GN.bmp",
+			"small" : "preserve/heroes/julian/HPS001GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "hippogryph",
+				"max" : 1,
+				"min" : 1
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty": //hippogryph//upgraded one
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["hippogryph", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["hippogryph", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["hippogryph", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+

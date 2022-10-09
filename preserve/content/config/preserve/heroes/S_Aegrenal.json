@@ -1,0 +1,76 @@
+{
+	"s_Agrenal" :
+	{
+		"class" : "bard",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Agrenal",
+			"biography" : "Agrenal.",
+			"specialty" :
+			{
+				"description" : "{+2 Morale}\r\n\r\n+2 Morale to all creatures.",
+				"tooltip" : "Bonus: spell",
+				"name" : "+2 Morale"
+			}
+		},
+
+    "images": {
+      "specialtySmall": "preserve/heroes/s_agrenal/UN32Mo.bmp",
+      "specialtyLarge": "preserve/heroes/s_agrenal/UN44Mo.bmp",
+      "large": "preserve/heroes/s_agrenal/HPL009BR.bmp",
+      "small": "preserve/heroes/s_agrenal/HPS009BR.bmp"
+    },
+    
+    "spellbook" :
+		[
+			"mirth"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 7,
+				"min" : 6
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			}
+		],
+		"specialty": 
+		[
+			{
+				"bonuses":
+				[
+			{
+				"type" : "MORALE",
+				"val" : 2,
+				"valueType" : "BASE_NUMBER"
+			}
+				]
+			}
+		]
+	}
+}
+
+

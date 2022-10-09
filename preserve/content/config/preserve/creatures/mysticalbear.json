@@ -1,0 +1,79 @@
+{
+	"mysticalbear":
+	{
+		"name" :
+		{
+			"plural" : "Mystical Furbolgs",
+			"singular" : "Mystical Furbolg"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "preserve",
+		"aiValue" : 2358,
+		"attack" : 18,
+		"cost" :
+		{
+			"gold" : 1300
+		},
+		"damage" :
+		{
+			 "max" : 20,
+			 "min" : 16
+		},
+		"defense" : 18,
+		"fightValue" : 2013,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C6MBea.def",
+      "map": "preserve/map/creatures/AVWC174.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPrS174P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPrL174P.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1.5,
+        "attack": 1,
+        "idle": 10,
+        "flight": 1.5
+      }
+    },
+    "doubleWide" : true,
+		"growth" : 2,
+		"hitPoints" : 100,
+		"level" : 6,
+		"sound" :
+		{
+			"attack" : "preserve/S174ATTK.wav",
+			"defend" : "preserve/S174DFND.wav",
+			"killed" : "preserve/S174KILL.wav",
+			"move" : "preserve/S174MOVE.wav",
+			"wince" : "preserve/S174WNCE.wav"
+ 		},
+		"speed" : 8,
+    "abilities":
+      {
+		"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 40
+			},
+			"castsScout" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.scout",
+				"val" : 3
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+	    }
+	}
+}

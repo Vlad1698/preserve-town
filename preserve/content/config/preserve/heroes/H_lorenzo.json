@@ -1,0 +1,101 @@
+{
+	"h_lorenzo" :
+	{
+		"class" : "guardian",
+		"female" : true,
+
+		"texts" :
+		{
+			"name" : "Caroline",
+			"biography" : "Flowers would be the total of Caroline's life. She supposes every moment when the flowers bloom in her garden will be her feast. Adventure is not her hobby, she just wants to find increasingly beautiful flowers.",
+			"specialty" :
+			{
+				"description" : "{Wasps}\r\n\r\nIncreases Speed of any Wasps or Hornets by 1 and their Attack and Defense skills by 5% for every 3 levels (rounded up).",
+				"tooltip" : "Bonus: creature",
+				"name" : "Wasps"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/lorenzo/Un32Meye.bmp",
+			"specialtyLarge" : "preserve/heroes/lorenzo/Un44Meye.bmp",
+			"large" : "preserve/heroes/lorenzo/HPL007GN.bmp",
+			"small" : "preserve/heroes/lorenzo/HPS007GN.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "scouting"
+			},
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			}
+		],
+		
+		"specialty": //magic eyes//misfortune eyes
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["magiceye", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["magiceye", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["magiceye", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

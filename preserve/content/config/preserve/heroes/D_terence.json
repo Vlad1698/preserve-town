@@ -1,0 +1,102 @@
+{
+	"d_terence" :
+	{
+    "class": "guardian",
+    "female" : false,
+		
+		"texts" :
+		{
+			"name" : "Terence",
+			"biography" : "Terence used be a ranger in Avlee, one day he and his partners were attacked by a kind of strange creatures. Fortunately, he had not been killed by these creatures, and then he became the friend of them. Now he found this creature can be used in the battle.",
+			"specialty" :
+			{
+				"description" : "{Tree Lurkers}\r\n\r\nIncreases Speed of any Tree Lurkers or Cave Leapers by 1 and their Attack and Defense skills by 5% for every 5 levels (rounded up).",
+				"tooltip" : "Bonus: creature",
+				"name" : "Tree Lurkers"
+			}
+		},
+
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/terence/Un32Leap.bmp",
+			"specialtyLarge" : "preserve/heroes/terence/Un44Leap.bmp",
+			"large" : "preserve/heroes/terence/HPL003GN.bmp",
+			"small" : "preserve/heroes/terence/HPS003GN.bmp"
+		},
+		
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			}
+		],
+		
+		"specialty": //True Lurkers
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["treelurker", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["treelurker", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["treelurker", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
+

@@ -1,0 +1,69 @@
+{
+	"misfortuneeye":
+	{
+		"name" :
+		{
+			"plural" : "Hornets",
+			"singular" : "Hornet"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+		"faction" : "preserve",
+		"aiValue" : 381,
+		"attack" : 10,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 4
+		},
+		"defense" : 5,
+		"fightValue" : 374,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C3UEye.def",
+			"map" : "preserve/map/creatures/AVWC168.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS168P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL168P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.25,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			},
+	       },
+		"growth" : 7,
+		"hitPoints" : 25,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "preserve/S168ATTK.wav",
+			"defend": "preserve/S168DFND.wav",
+			"killed": "preserve/S168KILL.wav",
+			"move": "preserve/S168MOVE.wav",
+			"wince": "preserve/S168WNCE.wav"
+		},
+		"speed" : 12,
+		"abilities" :
+		{
+					"canFly" : 
+			{
+				"type" : "FLYING"
+			},
+      "castMisfortune" :
+			{
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.misfortune",
+				"val" : 100
+			}
+		}
+	}
+}

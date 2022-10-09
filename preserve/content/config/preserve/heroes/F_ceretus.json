@@ -1,0 +1,101 @@
+{
+	"f_ceretus" :
+	{
+		"class" : "guardian",
+		"female" : false,
+
+		"texts" :
+		{
+			"name" : "Theoretus",
+			"biography" : "Due to his good unicorn companion was recruited by the army, Theoretus decided to leave Avlee. The unreasonable elves soldiers made him angry, but he did not have the ability to resist them. After he had left Avlee, he found a new creature in the jungle. Now he becomes the friend of the fearie bear, and he also believe he can meet the old friend again.",
+			"specialty" :
+			{
+				"description" : "{Fearie Bears}\r\n\r\nIncreases Speed of any Fearie Bear or Mistical Bears by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
+				"tooltip" : "Bonus: creature",
+				"name" : "Faerie Bear"
+			}
+		},
+		
+		"images" :
+		{
+			"specialtySmall" : "preserve/heroes/ceretus/Un32Bear.bmp",
+			"specialtyLarge" : "preserve/heroes/ceretus/Un44Bear.bmp",
+			"large" : "preserve/heroes/ceretus/HPL005GN.bmp",
+			"small" : "preserve/heroes/ceretus/HPS005GN.bmp"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "halflings",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
+			},
+			{
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "resistance"
+			},
+			{
+				"level" : "basic",
+				"skill" : "diplomacy"
+			}
+		],
+		
+		"specialty": //fench1//fench2
+		[
+			{
+				"growsWithLevel": true, //value is calculated at level-up
+				"bonuses":
+				[
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 0,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["fairybear", true]
+							}
+						]
+					},
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["fairybear", true]
+							}
+						]
+					},
+					{
+						"type": "STACKS_SPEED",
+						"val": 1,
+						"limiters":
+						[
+							{
+								"type": "CREATURE_TYPE_LIMITER",
+								"parameters" : ["fairybear", true]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

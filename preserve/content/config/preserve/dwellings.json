@@ -1,0 +1,89 @@
+{
+    "core:creatureGeneratorCommon" : {
+        "types" : {
+            "preserveLevel1" : {
+                "name" : "Thatched Hut",
+                "creatures" : [[ "halflings" ]],
+
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre1",
+                        "mask" : ["VVV","VVV","VBA" ]
+                    }
+                }
+            },
+            "preserveLevel2" : {
+                "name" : "Stone Cavern",
+                "creatures" : [[ "treelurker" ]],
+
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre2",
+                        "mask" : [ "VVV","VBB", "VAB" ]
+                    }
+                }
+            },
+            "preserveLevel3" : {
+                "name" : "Hive",
+                "creatures" : [[ "magiceye" ]],
+
+                "templates" : {
+                    "default" : {   
+                        "animation" : "preserve/map/dwellings/AVGpre3",
+                        "mask" : ["VVV","VBB","VBA" ]
+                    }
+                }
+            },
+            "preserveLevel4" : {
+                "name" : "Stonehenge",
+                "creatures" : [[ "foxdruid" ]],
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre4",
+                        "mask" : ["VVV","BBB","BAB" ]
+                    }
+                }
+            },
+            "preserveLevel5" : {
+                "name" : "Perch",
+                "creatures" : [[ "hippogryph" ]],
+                "guards" : [
+                    { "amount" : 9, "type" : "hippogryph" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre5",
+                        "mask" : [ "VVV","VBB","VBA"                        ]
+                    }
+                }
+            },
+            "preserveLevel6" : {
+                "name" : "Arcane Garden",
+                "creatures" : [[ "fairybear" ]],
+                "guards" : [
+                    { "amount" : 6, "type" : "fairybear" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre6",
+                        "mask" : ["VVV","BBB","BBA" ]
+                    }
+                }
+            },
+            "preserveLevel7" : {
+                "name" : "Forest of Life",
+                "creatures" : [[ "treant" ]],
+                "guards" : [
+                    { "amount" : 3, "type" : "treant" }
+                ],
+                "templates" : {
+                    "default" : {
+                        "animation" : "preserve/map/dwellings/AVGpre7",
+                        "mask" : ["VVVV","VBBB","VBAB" ]
+                    }
+                }
+            }
+
+        }       
+    }
+} 

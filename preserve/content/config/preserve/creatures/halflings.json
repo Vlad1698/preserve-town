@@ -1,0 +1,76 @@
+{
+  "halflings": {
+    "name": {
+      "plural": "Halflings",
+      "singular": "Halfling"
+    },
+    "advMapAmount": {
+ "max" : 50,
+ "min" : 20
+    },
+    "faction": "preserve",
+    "aiValue": 70,
+    "attack": 4,
+    "cost": {
+      "gold": 40
+    },
+    "damage": {
+ "max" : 3,
+ "min" : 1
+    },
+    "defense": 2,
+    "fightValue": 83,
+    "graphics": {
+      "animation": "preserve/battle/creatures/C1Half.def",
+      "map": "preserve/map/creatures/AVWC138.def",
+      "iconSmall": "preserve/iconsSmall/creatures/CPRS138P.bmp",
+      "iconLarge": "preserve/iconsBig/creatures/CPRL138N.bmp",
+      "timeBetweenFidgets": 1,
+      "animationTime": {
+        "walk": 1,
+        "attack": 1,
+        "idle": 10,
+        "flight": 1
+      },
+      "missile" :
+			{
+				"projectile" : "PHALF.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+    },
+    "growth": 15,
+    "hitPoints": 4,
+    "horde": 8,
+    "level": 1,
+    "upgrades": [ "hobbit" ],
+    "shots" : 24,
+    "sound": {
+      "attack": "preserve/S164ATTK.wav",
+      "defend": "preserve/S164DFND.wav",
+      "killed": "preserve/S164KILL.wav",
+      "move": "preserve/S164MOVE.wav",
+      "shoot": "preserve/CPR1SHOT.wav",
+      "wince": "preserve/S164WNCE.wav"
+    },
+    "speed": 5,
+    "abilities": {
+      "canShoot": {
+        "type": "SHOOTER"
+      },
+      "lucky":
+			{
+				"type":"SELF_LUCK"
+			}
+    }
+  }
+}

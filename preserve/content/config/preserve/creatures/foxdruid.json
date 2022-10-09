@@ -1,0 +1,85 @@
+{
+	"foxdruid":
+	{
+		"name" :
+		{
+			"plural" : "Fox Druids",
+			"singular" : "Fox Druid"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"faction" : "preserve",
+		"aiValue" : 574,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 370
+		},
+		"damage" :
+		{
+			 "max" : 10,
+			 "min" : 6
+		},
+		"defense" : 10,
+		"fightValue" : 553,
+		"graphics" :
+		{
+			"animation" : "preserve/battle/creatures/C4Fdru.def",
+			"map" : "preserve/map/creatures/AVWC169.def",
+			"iconSmall" : "preserve/iconsSmall/creatures/CPrS169P.bmp",
+			"iconLarge" : "preserve/iconsBig/creatures/CPrL169P.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10,
+				"flight" : 1
+			},
+			"missile" :
+			{
+				"projectile" : "preserve/battle/creatures/projectile/zap1.DEF",
+				"attackClimaxFrame" : 7,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		},
+		"growth" : 4,
+		"hitPoints" : 30,
+		"level" : 4,
+		"upgrades": [ "highdruid" ],
+		"shots" : 8,
+		"sound" :
+		{
+			"attack": "preserve/S169ATTK.wav",
+			"defend": "preserve/S169DFND.wav",
+			"killed": "preserve/S169KILL.wav",
+			"move": "preserve/S169MOVE.wav",
+			"wince": "preserve/S169WNCE.wav",
+			"shoot" : "preserve/S169SHOT.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"noMeleePenalty" :
+			{
+				"type" : "NO_MELEE_PENALTY"
+			}
+		}
+	}
+}
