@@ -9,7 +9,15 @@
 	"compatibility":
 	{
 		"min" : "1.0.0"
-	},	
+	},
+	"german" : {
+		"name" : "Reservat",
+		"description" : "Neue Stadt erstellt von urbanellos, The Forgotten Fields, avatar, acidchalk",
+		"modType" : "Stadt",		
+		"translations" : [
+			"translation/german.json"
+		]
+	},
     "factions" : [ "config/preserve/town" ],
 	
 	"creatures" :
