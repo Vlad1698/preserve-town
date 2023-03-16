@@ -15,7 +15,7 @@
 		"description" : "Neue Stadt erstellt von urbanellos, The Forgotten Fields, avatar, acidchalk",
 		"modType" : "Stadt",		
 		"translations" : [
-			"translation/german.json"
+			"translation/preserve/german.json"
 		]
 	},
     "factions" : [ "config/preserve/town" ],
