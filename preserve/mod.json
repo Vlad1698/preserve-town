@@ -13,7 +13,6 @@
 	"german" : {
 		"name" : "Reservat",
 		"description" : "Neue Stadt erstellt von urbanellos, The Forgotten Fields, avatar, acidchalk",
-		"modType" : "Stadt",		
 		"translations" : [
 			"translation/preserve/german.json"
 		]
