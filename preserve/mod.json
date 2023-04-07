@@ -4,11 +4,11 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.1.6",
+	"version" : "1.1.7",
 	"modType" : "Town",	
 	"compatibility":
 	{
-		"min" : "1.0.0"
+		"min" : "1.2.0"
 	},
 	"german" : {
 		"name" : "Reservat",
@@ -79,7 +79,8 @@
     ],
 	"changelog" :
     {
-        "1.1.6"   : [ "Partial special building support" ],
+        "1.1.7"   : [ "Update to vcmi-1.2" ],
+		"1.1.6"   : [ "Partial special building support" ],
 		"1.1.5"   : [ "New abilities and animations" ],
 		"1.1.2"   : [ "Small bug fixes", "New puzzle by acidchalk" ],
 		"1.1.1"   : [  "Upgaded graphic", "Hero males and female sprites on the battlefields", "Bug fixes" ],

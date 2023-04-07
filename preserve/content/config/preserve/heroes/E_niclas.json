@@ -59,19 +59,16 @@
 			}
 		],
 		
-		"specialty": //estate bonus
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "GENERATE_RESOURCE",
-						"subtype": "resource.gems",
-						"val": 1
-					}
-				]
+		"specialty": {
+			"bonuses": {
+				"gems" :
+				{
+					"type": "GENERATE_RESOURCE",
+					"subtype": "resource.gems",
+					"val": 1
+				}
 			}
-		]
+		}
 	}
 }
 

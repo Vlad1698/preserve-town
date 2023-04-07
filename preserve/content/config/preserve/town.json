@@ -320,7 +320,7 @@
 						"gems" : 5,
 						"gold" : 1000
 					},
-					"requires" : [ "allOf", ["tavern"], ["fort"], ["townHall"], ["special3"] ],
+					"requires" : [ "allOf", ["tavern"], ["fort"], ["townHall"], ["special3"] ]
 //					"id" : 17
 				},	
 				"special3" : 
@@ -661,6 +661,8 @@
 			"primaryResource" : "gems",
 			"siege" : {
 				"shooter" : "hobbit",
+				"towerIconSmall" : "preserve/icons/arrowtowersmall",
+				"towerIconLarge" : "preserve/icons/arrowtowerslarge",
 				"imagePrefix" : "preserve/siege/SGPR",
 				"gate" :
 				{
@@ -1023,7 +1025,7 @@
 					"border" : "preserve/town-screen/buildings-border/TOPRup_6",
 					"x" : 0,
 					"y" : 0
-				},
+				}
 			},
 		"tavernVideo" : "TAVERN.BIK",
 		"townBackground" : "preserve/town-screen/background.bmp",

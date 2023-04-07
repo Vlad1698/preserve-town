@@ -60,18 +60,14 @@
 			}
 		],
 		
-	"specialty": //iceBolt
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.iceBolt",
-						"addInfo": 5
-					}
-				]
+		"specialty": {
+			"bonuses": {
+				"iceBolt" : {
+					"type": "SPECIAL_SPELL_LEV",
+					"subtype": "spell.iceBolt",
+					"addInfo": 5
+				}
 			}
-		]
+		}
 	}
 }

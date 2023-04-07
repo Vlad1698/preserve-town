@@ -55,26 +55,18 @@
 			}
 		],
 		
-		"specialty": //defense bonus
-		[
-			{
-				"growsWithLevel" : true,
-				"bonuses":
-				[
-					{
-						"type": "SPECIAL_SECONDARY_SKILL", //give 5% to this skill with each level
-						"subtype": "skill.armorer",
-						"val": 5
-					},
-					{
-						"type": "SECONDARY_SKILL_PREMY", //used for first level
-						"subtype": "skill.armorer",
-						"val": 5,
-						"valueType": "PERCENT_TO_BASE"
-					}
-				]
+		"specialty": {
+			"bonuses": {
+				"armorer" : {
+					"subtype" : -1,
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "GENERAL_DAMAGE_REDUCTION",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
 			}
-		]
+		}
 	}
 }
 

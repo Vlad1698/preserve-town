@@ -57,20 +57,16 @@
 				"skill" : "airMagic"
 			}
 		],
-		"specialty": 
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "OPENING_BATTLE_SPELL",
-						"subtype": "spell.mirth",
-						"val" : 3,
-						"valueType" : "BASE_NUMBER"
-					}
-				]
+		"specialty": {
+			"bonuses": {
+				"mirth" : {
+					"type": "OPENING_BATTLE_SPELL",
+					"subtype": "spell.mirth",
+					"val" : 3,
+					"valueType" : "BASE_NUMBER"
+				}
 			}
-		]
+		}
 	}
 }
 

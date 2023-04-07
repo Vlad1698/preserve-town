@@ -57,19 +57,15 @@
 				"skill" : "leadership"
 			}
 		],
-		"specialty": 
-		[
-			{
-				"bonuses":
-				[
-			{
-				"type" : "MORALE",
-				"val" : 2,
-				"valueType" : "BASE_NUMBER"
+		"specialty": {
+			"bonuses": {
+				"morale" : {
+					"type" : "MORALE",
+					"val" : 2,
+					"valueType" : "BASE_NUMBER"
+				}
 			}
-				]
-			}
-		]
+		}
 	}
 }
 

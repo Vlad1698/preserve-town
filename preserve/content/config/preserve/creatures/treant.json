@@ -35,8 +35,7 @@
       "animationTime": {
         "walk": 1.5,
         "attack": 1,
-        "idle": 10,
-        "flight": 1.5
+        "idle": 10.5
       }
     },
     "doubleWide" : true,
@@ -56,15 +55,16 @@
 			"wince" : "preserve/S175WNCE.wav"
  		},
 		"speed" : 7,
-    "abilities":
-      {
-		"advancedSlayer" : { "type" : "KING2" },
-		"binds" :
+		"abilities":
+		{
+			"advancedSlayer" : { "type" : "KING", "val" : 2, "valueType" : "ADDITIVE_VALUE" },
+			"binds" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.bind",
+				"addInfo" : [0,2],
 				"val" : 100
 			}
-	    }
+		}
 	}
 }

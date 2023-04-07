@@ -34,8 +34,7 @@
       "animationTime": {
         "walk": 1.25,
         "attack": 1,
-        "idle": 10,
-        "flight": 1
+        "idle": 10
       }
     },
     "doubleWide" : true,
@@ -61,10 +60,9 @@
 			{
 				"type" : "FLYING"
 			},
-		   "regenerate" : 
+			"regenerates" :
 			{
-				"type" : "FULL_HP_REGENERATION",
-				"subtype" : 1
+				"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE", "subtype": 1
 			}
 	    }
 	}

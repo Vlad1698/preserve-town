@@ -30,8 +30,7 @@
       "animationTime": {
         "walk": 1.25,
         "attack": 1,
-        "idle": 10,
-        "flight": 1
+        "idle": 10
       }
     },
     "doubleWide": true,
@@ -50,7 +49,7 @@
       "canFly": {
         "type": "FLYING"
       },
-	  "advancedSlayer" : { "type" : "KING2" },
+	  "advancedSlayer" : { "type" : "KING", "val" : 2, "valueType" : "ADDITIVE_VALUE"},
 	  "fireBreath" :
 			{
 				"type" : "TWO_HEX_ATTACK_BREATH"
@@ -61,9 +60,9 @@
 				"val" : 15
 			},
       "regenerates" :
-			{
-				"type" : "FULL_HP_REGENERATION"
-			}
+	  {
+			"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE"
+	  }
     }
   }
 }

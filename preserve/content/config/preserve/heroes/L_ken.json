@@ -59,19 +59,15 @@
 			}
 		],
 		
-		"specialty": //weakness
-		[
-			{
-				"bonuses":
-				[
-					{
-						"type": "SPECIAL_SPELL_LEV",
-						"subtype": "spell.weakness",
-						"addInfo": 5
-					}
-				]
+		"specialty": {
+			"bonuses": {
+				"weakness" : {
+					"type": "SPECIAL_SPELL_LEV",
+					"subtype": "spell.weakness",
+					"addInfo": 5
+				}
 			}
-		]
+		}
 	}
 }
 

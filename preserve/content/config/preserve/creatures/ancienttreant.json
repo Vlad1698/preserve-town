@@ -30,8 +30,7 @@
       "animationTime": {
         "walk": 1.5,
         "attack": 1,
-        "idle": 10,
-        "flight": 1.5
+        "idle": 10.5
       },
       "missile": {
         "projectile": "PCYCLBX.DEF",
@@ -65,12 +64,12 @@
         "type": "SPELL_AFTER_ATTACK",
         "subtype": "spell.bind",
         "val": 100,
-        "addInfo" : 2000 // FIXME: replace with range field?
+        "addInfo" : [1, 1]
       },
       "canShoot": {
         "type": "SHOOTER"
       },
-	  "advancedSlayer" : { "type" : "KING2" },
+	  "advancedSlayer" : { "type" : "KING", "val" : 2, "valueType" : "ADDITIVE_VALUE" },
       "noMeleePenalty": {
         "type": "NO_MELEE_PENALTY"
       },
