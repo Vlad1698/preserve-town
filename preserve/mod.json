@@ -4,11 +4,17 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.1.7",
+	"version" : "1.1.8",
 	"modType" : "Town",	
 	"compatibility":
 	{
 		"min" : "1.2.0"
+	},
+	"chinese" : {
+		"name" : "禁林",
+		"translations" : [
+			"translation/preserve/chinese.json"
+		]
 	},
 	"german" : {
 		"name" : "Reservat",
@@ -79,6 +85,7 @@
     ],
 	"changelog" :
     {
+        "1.1.8"   : [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
         "1.1.7"   : [ "Update to vcmi-1.2" ],
 		"1.1.6"   : [ "Partial special building support" ],
 		"1.1.5"   : [ "New abilities and animations" ],
