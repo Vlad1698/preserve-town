@@ -1,6 +1,7 @@
 {
 	"preserve" : {
 		"alignment" : "neutral",
+		"boat" : "boatFortress",
 		"creatureBackground" : { "120px" : "preserve/creature-bg-120px.bmp", "130px" : "preserve/creature-bg-130px.bmp" },
 		"name" : "Preserve",
 		"nativeTerrain" : "grass",
@@ -613,6 +614,7 @@
 			"guildWindow" : "preserve/town-screen/mage-guild.bmp",
 			"hallBackground" : "TPTHBKFR",
 			"horde" : [ 0, -1 ],
+			"moatAbility" : "preserveMoat",
 			"icons" : {
 				"village" : {
 					"normal" : {"small" : "preserve/icons/hall-small.bmp", "large" : "preserve/icons/hall-big.bmp" },
@@ -1030,7 +1032,6 @@
 		"tavernVideo" : "TAVERN.BIK",
 		"townBackground" : "preserve/town-screen/background.bmp",
 		"warMachine" : "firstAidTent",
-		"moatDamage" : 90,
 		"hallSlots" : [
 				[
 					[ "villageHall", "townHall", "cityHall", "capitol" ],
