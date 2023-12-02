@@ -54,7 +54,7 @@
 		{
 		"canFly" : 
 		{
-			"type" : "FLYING"
+			"type" : "FLYING", "subtype" : "movementFlying"
 		},
 			"extraRetaliation" :
 			{
@@ -65,8 +65,9 @@
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.blind",
-				"val" : 30
+				"val" : 30,
+				"addInfo" : [1, 2]
 			}
 		}
-		}	
-	}
+	}	
+}

@@ -91,14 +91,13 @@
 			"castRaven" :
 			{
 				"type" : "SPELL_BEFORE_ATTACK",
-				"addInfo" : [0,2],
+				"addInfo" : [0, 2],
 				"subtype" : "spell.summonRaven",
 				"val" : 20
 			},
 			"spellpower" :
 			{
 				"type" : "CREATURE_SPELL_POWER",
-				"subtype" : "spell.summonRaven",
 				"val" : 300
 			},	
 			"castLength" :

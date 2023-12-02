@@ -69,15 +69,13 @@
 				"cost": 0, 
 				"effects" : {
 					"notActive" : {
-						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : 62,
+						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
 						]
 					},
 					"noRetaliation" : {
-						"val" : 0,
 						"type" : "NO_RETALIATION",
 						"duration" : [
 							"N_TURNS"
@@ -92,15 +90,13 @@
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
-						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : 62,
+						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
 						]
 					},
 					"noRetaliation" : {
-						"val" : 0,
 						"type" : "NO_RETALIATION",
 						"duration" : [
 							"N_TURNS"
@@ -115,15 +111,13 @@
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
-						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : 62,
+						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
 						]
 					},
 					"noRetaliation" : {
-						"val" : 0,
 						"type" : "NO_RETALIATION",
 						"duration" : [
 							"N_TURNS"
@@ -138,15 +132,13 @@
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
-						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : 62,
+						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
 						]
 					},
 					"noRetaliation" : {
-						"val" : 0,
 						"type" : "NO_RETALIATION",
 						"duration" : [
 							"N_TURNS"
@@ -155,5 +147,5 @@
 				}
 			}
 		}
-		}
 	}
+}

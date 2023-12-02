@@ -58,11 +58,11 @@
 		{
 			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING", "subtype" : "movementFlying"
 			},
 			"regenerates" :
 			{
-				"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE", "subtype": 1
+				"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE"
 			}
 	    }
 	}

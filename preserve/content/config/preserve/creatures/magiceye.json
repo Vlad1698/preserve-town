@@ -57,9 +57,9 @@
 		"speed" : 9,
 		"abilities" :
 		{
-					"canFly" : 
+			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING", "subtype" : "movementFlying"
 			}
 		}
 	}

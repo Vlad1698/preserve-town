@@ -53,15 +53,16 @@
 		"speed" : 12,
 		"abilities" :
 		{
-					"canFly" : 
+			"canFly" : 
 			{
-				"type" : "FLYING"
+				"type" : "FLYING", "subtype" : "movementFlying"
 			},
       "castMisfortune" :
 			{
 				"type" : "SPELL_AFTER_ATTACK",
 				"subtype" : "spell.misfortune",
-				"val" : 100
+				"val" : 100,
+				"addInfo" : [1, 2]
 			}
 		}
 	}
