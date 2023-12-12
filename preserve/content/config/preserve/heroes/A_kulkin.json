@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Kulkin",
-			"biography" : "Although as a halfling, Kulkin is the foster son of Sharnah, the chief of Mountain Drawvers. The old chief hoped Kulkin to be the successor, but Mountain Drawves was perished by strange enemies before his succession. Kulkin had to leave the old territory and started for new life.",
+			"biography" : "Although as a halfling, Kulkin is the foster son of Sharnah, the chief of Mountain Drawvers. The old chief hoped Kulkin to be the successor, but Mountain Drawves were perished by strange enemies before his succession. Kulkin had to leave the old territory and started a new life.",
 			"specialty" :
 			{
 				"description" : "{Halflings}\r\n\r\nIncreases Speed of any Halflings or Hobbits by 1 and their Attack and Defense skills by 5% for every level (rounded up).",
@@ -20,10 +20,9 @@
 		{
 			"specialtySmall" : "preserve/heroes/kulkin/UN32HALF.bmp",
 			"specialtyLarge" : "preserve/heroes/kulkin/UN44HALF.bmp",
-			"large" : "preserve/heroes/kulkin/HPL000GN.bmp",
-			"small" : "preserve/heroes/kulkin/HPS000GN.bmp"
+			"large" : "preserve/heroes/kulkin/HPL000GN.png",
+			"small" : "preserve/heroes/kulkin/HPS000GN.png"
 		},
-		
 
 		"army" :
 		[

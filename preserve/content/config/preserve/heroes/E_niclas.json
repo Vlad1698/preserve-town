@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Niclas",
-			"biography" : "Niclas had to leave the hometown due to the war in his young age. He was close to death many times during his vagabondage, but he never quit his life. Once in a valley, he found a mystical box with a piece of gem. He decied to sell the gem for maintaining his life. However, another gem emerged in the box after the day he had took it off. Now, the box becomes his secret. ",
+			"biography" : "Niclas had to leave the hometown due to the war in his young age. He was close to death many times during his vagabondage, but he never quit his life. One day, in a valley, he found a mystical box with a piece of gem. He decided to sell the gem for maintaining his life. However, another gem emerged in the box after the day he had took it off. Now, the box becomes his secret.",
 			"specialty" :
 			{
 				"description" : "{Gems}\r\n\r\nIncreases kingdom's gems production by 1 per day.",
@@ -24,8 +24,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/niclas/UN32T184.bmp",
 			"specialtyLarge" : "preserve/heroes/niclas/UN44T184.bmp",
-			"large" : "preserve/heroes/niclas/HPL004GN.bmp",
-			"small" : "preserve/heroes/niclas/HPS004GN.bmp"
+			"large" : "preserve/heroes/niclas/HPL004GN.png",
+			"small" : "preserve/heroes/niclas/HPS004GN.png"
 		},
 		
 

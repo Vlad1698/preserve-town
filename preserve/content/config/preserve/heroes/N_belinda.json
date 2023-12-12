@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Belinda",
-			"biography" : "Belinda dreamed to become a writer when she was a child. She has found many inspirations from adventure experience. However, she thought her novel is still not attractive, so she wants to find the best plot in the battlefield. ",
+			"biography" : "Belinda dreamed to become a writer when she was a child. She has found many inspirations from adventure experience. However, she thought her novel is still not attractive, so she wants to find the best plot in the battlefield.",
 			"specialty" :
 			{
 				"description" : "{Intelligence}\r\n\r\nReceives a 5% per level bonus to Intelligence skill percentage.",
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/belinda/UN32T193.bmp",
 			"specialtyLarge" : "preserve/heroes/belinda/UN44T193.bmp",
-			"large" : "preserve/heroes/belinda/HPL005BR.bmp",
-			"small" : "preserve/heroes/belinda/HPS005BR.bmp"
+			"large" : "preserve/heroes/belinda/HPL005BR.png",
+			"small" : "preserve/heroes/belinda/HPS005BR.png"
 		},
 
 		"spellbook" :

@@ -7,10 +7,10 @@
 		"texts" :
 		{
 			"name" : "Renata",
-			"biography" : "As a bard, Renata loves music and she supposes music is life. Due to her lonely life, she decides to find a new lifestyle. However, no one knows she still worry about her little sister, Lynn, who dispeared when she was a child.",
+			"biography" : "As a bard, Renata loves music and she supposes music is life. Due to her lonely life, she decides to find a new lifestyle. However, no one knows she still worries about her little sister, Lynn, who disappeared when she was a child.",
 			"specialty" :
 			{
-				"description" : "{Mirth}\r\n\r\nCast Mirth at the beggining of battle.",
+				"description" : "{Mirth}\r\n\r\nCast Mirth at the beginning of battle.",
 				"tooltip" : "Bonus: spell",
 				"name" : "Mirth"
 			}
@@ -19,8 +19,8 @@
     "images": {
       "specialtySmall": "preserve/heroes/renata/UN32T195.bmp",
       "specialtyLarge": "preserve/heroes/renata/UN44T195.bmp",
-      "large": "preserve/heroes/renata/HPL007BR.bmp",
-      "small": "preserve/heroes/renata/HPS007BR.bmp"
+      "large": "preserve/heroes/renata/HPL007BR.png",
+      "small": "preserve/heroes/renata/HPS007BR.png"
     },
     
     "spellbook" :

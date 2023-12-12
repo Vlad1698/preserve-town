@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/lorenzo/Un32Meye.bmp",
 			"specialtyLarge" : "preserve/heroes/lorenzo/Un44Meye.bmp",
-			"large" : "preserve/heroes/lorenzo/HPL007GN.bmp",
-			"small" : "preserve/heroes/lorenzo/HPS007GN.bmp"
+			"large" : "preserve/heroes/lorenzo/HPL007GN.png",
+			"small" : "preserve/heroes/lorenzo/HPS007GN.png"
 		},
 
 		"army" :

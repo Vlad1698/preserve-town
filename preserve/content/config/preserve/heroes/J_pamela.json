@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/pamela/UN32T189.bmp",
 			"specialtyLarge" : "preserve/heroes/pamela/UN44T189.bmp",
-			"large" : "preserve/heroes/pamela/HPL001BR.bmp",
-			"small" : "preserve/heroes/pamela/HPS001BR.bmp"
+			"large" : "preserve/heroes/pamela/HPL001BR.png",
+			"small" : "preserve/heroes/pamela/HPS001BR.png"
 		},
 
 		"spellbook" :
