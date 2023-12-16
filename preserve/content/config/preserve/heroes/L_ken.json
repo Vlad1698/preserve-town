@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Ken",
-			"biography" : "Ken supposed his hometown in chaos. Thus, he wants to find the real order. After he visited Erathia and Bracada, he still do not know what the real order is. He is often immersed in the fatasy of his own world.",
+			"biography" : "Ken supposed his hometown in chaos. Thus, he wants to find the real order. After he visited Erathia and Bracada, he still does not know what the real order is. He is often immersed in the fantasy of his own world.",
 			"specialty" :
 			{
 				"description" : "{Weakness}\r\n\r\nCasts Weakness with increased effect, based on hero level compared to the level of the target unit (the bonus is greater when used on weaker units.)",
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/ken/Un32Weak.bmp",
 			"specialtyLarge" : "preserve/heroes/ken/Un44Weak.bmp",
-			"large" : "preserve/heroes/ken/HPL003BR.bmp",
-			"small" : "preserve/heroes/ken/HPS003BR.bmp"
+			"large" : "preserve/heroes/ken/HPL003BR.png",
+			"small" : "preserve/heroes/ken/HPS003BR.png"
 		},
 		
 		"spellbook" :

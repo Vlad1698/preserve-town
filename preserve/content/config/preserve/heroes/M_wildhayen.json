@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Wildhayen",
-			"biography" : "Wildhayen has studied in Bracada for many years. As a great mage, he often be praised by his apprentices. However, he run into a escaped librarian who had stolen the books from his library, and then he fell asleep while talking with the librarian. After he has waked up, Wildhayen found he lost all the memory with magic. He has to learn it again as a beginner.",
+			"biography" : "Wildhayen has studied in Bracada for many years. As a great mage, he has often be praised by his apprentices. However, he run into a escaped librarian who had stolen the books from his library, and then he fell asleep while talking with the librarian. After he has waked up, Wildhayen found he lost all the memory with magic. He has to learn it again as a beginner.",
 			"specialty" :
 			{
 				"description" : "{Mysticism}\r\n\r\nReceives a 5% per level bonus to Mysticism skill percentage.",
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/wildhayen/UN32T192.bmp",
 			"specialtyLarge" : "preserve/heroes/wildhayen/UN44T192.bmp",
-			"large" : "preserve/heroes/wildhayen/HPL004BR.bmp",
-			"small" : "preserve/heroes/wildhayen/HPS004BR.bmp"
+			"large" : "preserve/heroes/wildhayen/HPL004BR.png",
+			"small" : "preserve/heroes/wildhayen/HPS004BR.png"
 		},
 
 		"spellbook" :

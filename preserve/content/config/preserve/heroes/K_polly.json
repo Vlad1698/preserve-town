@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Polly",
-			"biography" : "Halflings found Polly in the forest and they provides life for her. However, no one knows the origin of the girl, because she never tell her story to anyone.",
+			"biography" : "Halflings found Polly in the forest and they provide life for her. However, no one knows the origin of the girl, because she never tell her story to anyone.",
 			"specialty" :
 			{
 				"description" : "{Sorcery}\r\n\r\nReceives a 5% per level bonus to Sorcery skill percentage.",
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/polly/Un32Sorc.bmp",
 			"specialtyLarge" : "preserve/heroes/polly/Un44Sorc.bmp",
-			"large" : "preserve/heroes/polly/HPL002BR.bmp",
-			"small" : "preserve/heroes/polly/HPS002BR.bmp"
+			"large" : "preserve/heroes/polly/HPL002BR.png",
+			"small" : "preserve/heroes/polly/HPS002BR.png"
 		},
 
 		"spellbook" :

@@ -7,10 +7,10 @@
 		"texts" :
 		{
 			"name" : "Theoretus",
-			"biography" : "Due to his good unicorn companion was recruited by the army, Theoretus decided to leave Avlee. The unreasonable elves soldiers made him angry, but he did not have the ability to resist them. After he had left Avlee, he found a new creature in the jungle. Now he becomes the friend of the fearie bear, and he also believe he can meet the old friend again.",
+			"biography" : "Due to his good unicorn companion was recruited by the army, Theoretus decided to leave Avlee. The unreasonable elves soldiers made him angry, but he did not have the ability to resist them. After he had left Avlee, he found a new creature in the jungle. Now he becomes the friend of the faerie bear, and he also believes he can meet the old friend again.",
 			"specialty" :
 			{
-				"description" : "{Fearie Bears}\r\n\r\nIncreases Speed of any Fearie Bear or Mistical Bears by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
+				"description" : "{Faerie Bear}\r\n\r\nIncreases Speed of any Faerie Bear or Mistical Bear by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
 				"tooltip" : "Bonus: creature",
 				"name" : "Faerie Bear"
 			}
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/ceretus/Un32Bear.bmp",
 			"specialtyLarge" : "preserve/heroes/ceretus/Un44Bear.bmp",
-			"large" : "preserve/heroes/ceretus/HPL005GN.bmp",
-			"small" : "preserve/heroes/ceretus/HPS005GN.bmp"
+			"large" : "preserve/heroes/ceretus/HPL005GN.png",
+			"small" : "preserve/heroes/ceretus/HPS005GN.png"
 		},
 
 		"army" :

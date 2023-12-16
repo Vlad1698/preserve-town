@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/agnes/UN32T186.bmp",
 			"specialtyLarge" : "preserve/heroes/agnes/UN44T186.bmp",
-			"large" : "preserve/heroes/agnes/HPL006GN.bmp",
-			"small" : "preserve/heroes/agnes/HPS006GN.bmp"
+			"large" : "preserve/heroes/agnes/HPL006GN.png",
+			"small" : "preserve/heroes/agnes/HPS006GN.png"
 		},
 
 		"army" :

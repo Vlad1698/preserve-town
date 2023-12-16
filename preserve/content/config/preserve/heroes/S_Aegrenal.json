@@ -7,7 +7,7 @@
 		"texts" :
 		{
 			"name" : "Agrenal",
-			"biography" : "Agrenal.",
+			"biography" : "Agrenal is a cheerful blonde bard, traveled from village to village, captivating hearts with her enchanting melodies and uplifting tales. With her presence, the team found renewed strength and determination, for Agrenal's songs invoked a sense of hope and belief in the impossible. Her music entertained, shining a light on the path of righteousness and guiding their actions towards the greater good.",
 			"specialty" :
 			{
 				"description" : "{+2 Morale}\r\n\r\n+2 Morale to all creatures.",
@@ -19,8 +19,8 @@
     "images": {
       "specialtySmall": "preserve/heroes/s_agrenal/UN32Mo.bmp",
       "specialtyLarge": "preserve/heroes/s_agrenal/UN44Mo.bmp",
-      "large": "preserve/heroes/s_agrenal/HPL009BR.bmp",
-      "small": "preserve/heroes/s_agrenal/HPS009BR.bmp"
+      "large": "preserve/heroes/s_agrenal/HPL009BR.png",
+      "small": "preserve/heroes/s_agrenal/HPS009BR.png"
     },
     
     "spellbook" :
