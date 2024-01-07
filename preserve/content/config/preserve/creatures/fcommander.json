@@ -7,16 +7,16 @@
 			"singular" : "Fairy Pixie"
 		},
 		"faction" : "preserve",
-		"aiValue" : 1070,
+		"aiValue" : 156,
 		"special" : true,
 		"attack" : 5,
 		"damage" :
 		{
-			 "max" : 15,
-			 "min" : 7
+			 "max" : 12,
+			 "min" : 6
 		},
 		"defense" : 5,
-		"fightValue" : 961,
+		"fightValue" : 130,
 		"graphics" :
 		{
 			"animation" : "preserve/battle/creatures/fcommander.def",
@@ -49,8 +49,8 @@
 
 		},
 		
-		"growth" : 1,
-		"hitPoints" : 60,
+		"growth" : 9,
+		"hitPoints" : 40,
 		"shots" : 24,
 		"level" : 0,
 		"sound" :
@@ -61,16 +61,12 @@
 			"move": "PIXIMOVE.wav",
 			"wince": "PIXIWNCE.wav"
  		},
-		"speed" : 5,
+		"speed" : 4,
 		"abilities" :
 		{
-//			"canFly" : 
-//			{
-//				"type" : "FLYING"
-//			},
-		    "canShoot" :
+			"canFly" : 
 			{
-				"type" : "SHOOTER"
+				"type" : "FLYING"
 			},
 			"magicResistance" :
 			{
