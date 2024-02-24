@@ -5,6 +5,9 @@
                 "name" : "Thatched Hut",
                 "creatures" : [[ "halflings" ]],
 
+                "sounds": {
+                    "ambient": ["dwellings/predwl1.wav"]
+                },
                 "templates" : {
                     "default" : {
                         "animation" : "preserve/map/dwellings/AVGpre1",
@@ -83,7 +86,6 @@
                     }
                 }
             }
-
-        }       
+        }
     }
 } 
