@@ -282,7 +282,7 @@
 				},
 				"horde1" :
 				{
-					"description" : "The Fortune Circle will increase Halfling production by 8 per week.",
+					"description" : "The Fortune Circle will increase Centamonth Hunter production by 8 per week.",
 					"name" : "Fortune Circle",
 					"cost" : 
 					{
@@ -294,7 +294,7 @@
 				},
 				"horde1Upgr" :
 				{
-					"description" : "The Fortune Circle will increase Hobbit production by 8 per week.",
+					"description" : "The Fortune Circle will increase Centamonth Thrower production by 8 per week.",
 					"name" : "Fortune Circle",
 					"cost" : 
 					{
@@ -345,7 +345,7 @@
 				},
 				"dwellingLvl1" :
 				{
-					"description" : "The Thatched Hut allows you to recruit Halflings.",
+					"description" : "The Thatched Hut allows you to recruit Centamonth Hunters.",
 					"name" : "Thatched Hut",
 					"cost" : 
 					{
@@ -435,7 +435,7 @@
 				},
 				"dwellingUpLvl1" :
 				{
-					"description" : "The Upg. Thatched Hut allows you to recruit Hobbits.",
+					"description" : "The Upg. Thatched Hut allows you to recruit Centamonth Throwers.",
 					"name" : "Upg. Thatched Hut",
 					"cost" :
 					{
@@ -662,7 +662,7 @@
 			],
 			"primaryResource" : "gems",
 			"siege" : {
-				"shooter" : "hobbit",
+				"shooter" : "foxdruid",
 				"towerIconSmall" : "preserve/icons/arrowtowersmall",
 				"towerIconLarge" : "preserve/icons/arrowtowerslarge",
 				"imagePrefix" : "preserve/siege/SGPR",
@@ -687,19 +687,19 @@
 					"bottom" :
 					{
 						"battlement" : { "x" : 594, "y" : 511 },
-						"creature" : { "x" : 371, "y" : 281 },
+						"creature" : { "x" : 371, "y" : 298 },
 						"tower" : { "x" : 594, "y" : 511 }
 					},
 					"keep" :
 					{
 						"battlement" : { "x" : 736, "y" : 159 },
-						"creature" : { "x" : 529, "y" : -26 },
+						"creature" : { "x" : 544, "y" : -6 },
 						"tower" : { "x" : 736, "y" : 159 }
 					},
 					"top" :
 					{
 						"battlement" : { "x" : 566, "y" : 31 },
-						"creature" : { "x" : 341, "y" : -197 },
+						"creature" : { "x" : 341, "y" : -177 },
 						"tower" : { "x" : 565, "y" : 31 }
 					}
 				},

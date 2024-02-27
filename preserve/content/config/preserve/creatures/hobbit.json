@@ -1,8 +1,8 @@
 {
   "hobbit": {
     "name": {
-      "plural": "Hobbits",
-      "singular": "Hobbit"
+      "plural": "Centamonth Throwers",
+      "singular": "Centamonth Thrower"
     },
     "advMapAmount": {
  "max" : 30,
@@ -27,38 +27,37 @@
       "iconLarge": "preserve/iconsBig/creatures/CPrL164P.bmp",
       "timeBetweenFidgets": 1,
       "animationTime": {
-        "walk": 1,
-        "attack": 1,
-        "idle": 10
+        "attack" : 1,
+        "idle" : 4,
+        "walk" : 1.30
       },
-      "missile" :
-			{
-				"projectile" : "PICEE.DEF",
-				"attackClimaxFrame" : 7,
-				"offset" :
-				{
-					"upperX" : 38,
-					"upperY" : -65,
-					"middleX" : 36,
-					"middleY" : -59,
-					"lowerX" : 21,
-					"lowerY" : -50
-				},
-				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
-			}
+            "missile" : {
+                "attackClimaxFrame" : 10,
+                "frameAngles" : [ 90, 72, 45, 27, 0, -27, -45, -72, -90 ],
+                "offset" : {
+                    "lowerX" : 21,
+                    "lowerY" : -50,
+                    "middleX" : 36,
+                    "middleY" : -59,
+                    "upperX" : 38,
+                    "upperY" : -65
+                },
+                "projectile" : "preserve/battle/creatures/projectile/centamonthStone.def"
+            }
     },
     "growth": 15,
     "hitPoints": 5,
     "horde": 8,
+    "doubleWide" : true,
     "level": 1,
     "shots" : 24,
     "sound": {
-      "attack": "preserve/S164ATTK.wav",
-      "defend": "preserve/S164DFND.wav",
-      "killed": "preserve/S164KILL.wav",
-      "move": "preserve/S164MOVE.wav",
-      "shoot": "preserve/S164SHOT.wav",
-      "wince": "preserve/S164WNCE.wav"
+      "attack": "preserve/CNTHATTK.wav",
+      "defend": "preserve/CNTHDFND.wav",
+      "killed": "preserve/CNTHKILL.wav",
+      "move": "preserve/CNTHMOVE.wav",
+      "shoot": "preserve/CNTHSHOT.wav",
+      "wince": "preserve/CNTHWNCE.wav"
     },
     "speed": 6,
     "abilities": {
@@ -66,88 +65,88 @@
         "type": "SHOOTER"
       },
       "lucky": { "type" : "LUCK", "val" : 1, "valueType" : "INDEPENDENT_MAX" }
-	},
-		"stackExperience" :
+    },
+        "stackExperience" :
  
-		[
-			{
-				"bonus" :
-				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
-				},
-				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
-			},	
-			{
-				"bonus" :
-				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
-				},
-				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
-			},	
-			{
-				"bonus" :
-				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
-				},
-				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "STACKS_SPEED"
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "HATE",
-					"subtype" : "creature.goblin"
-				},
-				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "HATE",
-					"subtype" : "creature.hobgoblin"
-				},
-				"values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "ENCHANTED",
-					"subtype" : "spell.slayer"
-				},
-				"values" : [ 0, 0, 1, 1, 1, 2, 2, 2, 3, 3 ]
-			},
-			{
-				"bonus" :
-				{
-					"type" : "FEARLESS"
-				},
-				"values" : [ false, false, false, false, false, false, true, true, true, true ]
-			}
-		]
+        [
+            {
+                "bonus" :
+                {
+                    "type" : "PRIMARY_SKILL",
+                    "subtype" : "primarySkill.attack"
+                },
+                "values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+            },    
+            {
+                "bonus" :
+                {
+                    "type" : "PRIMARY_SKILL",
+                    "subtype" : "primarySkill.defence"
+                },
+                "values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+            },    
+            {
+                "bonus" :
+                {
+                    "type" : "CREATURE_DAMAGE",
+                    "subtype" : "creatureDamageMin"
+                },
+                "values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "CREATURE_DAMAGE",
+                    "subtype" : "creatureDamageMax"
+                },
+                "values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+            },
+            {
+                "bonus" :
+                {
+                    "valueType" : "PERCENT_TO_BASE",
+                    "type" : "STACK_HEALTH"
+                },
+                "values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "STACKS_SPEED"
+                },
+                "values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "HATE",
+                    "subtype" : "creature.goblin"
+                },
+                "values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "HATE",
+                    "subtype" : "creature.hobgoblin"
+                },
+                "values" : [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "ENCHANTED",
+                    "subtype" : "spell.slayer"
+                },
+                "values" : [ 0, 0, 1, 1, 1, 2, 2, 2, 3, 3 ]
+            },
+            {
+                "bonus" :
+                {
+                    "type" : "FEARLESS"
+                },
+                "values" : [ false, false, false, false, false, false, true, true, true, true ]
+            }
+        ]
   }
 }
