@@ -12,7 +12,7 @@
 	},
 	"chinese" : {
 		"name" : "禁林",
-		"description" : "禁林", 
+		"description" : "禁林生物的设计源自魔戒的世界观，是一片被遗忘的领域。作者：FF Team、Turbanellos、By003。",
 		"translations" : [
 			"translation/preserve/chinese.json"
 		]
