@@ -1,14 +1,14 @@
 {
 	"name" : "Preserve Town",
-	"description" : "New town made by Turbanellos, The Forgotten Fields, avatar, acidchalk",
+	"description" : "New town made by Ben Yan",
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.2.3",
+	"version" : "1.2.4",
 	"modType" : "Town",	
 	"compatibility":
 	{
-		"min" : "1.4.0"
+		"min" : "1.6.0"
 	},
 	"chinese" : {
 		"name" : "禁林",
@@ -19,11 +19,19 @@
 	},
 	"german" : {
 		"name" : "Reservat",
-		"description" : "Neue Stadt erstellt von urbanellos, The Forgotten Fields, avatar, acidchalk",
+		"description" : "Neue Stadt erstellt von Turbanellos, The Forgotten Fields, avatar, acidchalk",
 		"translations" : [
 			"translation/preserve/german.json"
 		]
 	},
+	"polish" : {
+		"name" : "Rezerwat",
+		"description" : "Nowe miasto inspirowane leśnym środowiskiem autorstwa Ben Yana",
+		"translations" : [
+			"translation/preserve/polish.json"
+		]
+	},
+	
     "factions" : [ "config/preserve/town" ],
 	
 	"creatures" :
@@ -87,7 +95,8 @@
     ],
 	"changelog" :
     {
-        "1.2.3"   : [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
+        "1.2.3"   : [ "Polish translation by FallainBlack" ],
+		"1.2.3"   : [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
 		"1.2.2"   : [ "Added the creatures' stackExp and fixed the commander" ],
 		"1.2.1"   : [ "Improved background" ],
 		"1.2.0"   : [ "Update to vcmi-1.4" ],
