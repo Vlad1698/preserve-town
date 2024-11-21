@@ -261,6 +261,7 @@
 				{
 					"description" : "The Resource Silo provides you with an additional +1 gem each day.",
 					"name" : "Resource Silo",
+					"produce": { "gems": 1 },
 					"cost" :
 					{
 						"ore" : 5,
@@ -273,6 +274,7 @@
 				{
 					"description" : "The Blacksmith provides your armies with First Aid Tents.",
 					"name" : "Blacksmith",
+					"warMachine" : "firstAidTent",
 					"cost" :
 					{
 						"wood" : 5,
@@ -372,7 +374,7 @@
 					},
 					"id" : 17
 				},
-				"special3" : 
+				"special2" : 
 				{
 					"description" : "The Rainbow can give +1 luck for visiting heroes once a week. ",
 					"name" : "Rainbow",
@@ -1099,7 +1101,6 @@
 			},
 		"tavernVideo" : "TAVERN.BIK",
 		"townBackground" : "preserve/town-screen/background.bmp",
-		"moatAbility" : "castleMoat",
 		"hallSlots" : [
 				[
 					[ "villageHall", "townHall", "cityHall", "capitol" ],
