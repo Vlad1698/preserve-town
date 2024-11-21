@@ -1,18 +1,18 @@
 {
 	"b_julian" :
 	{
-    "class": "guardian",
+    "class": "guardian",//Solendore
     "female" : false,
 		
 		"texts" :
 		{
-			"name" : "Julian",
-			"biography" : "Julian expected to tame the hippogryphs to be the powerful troops for Avlee, but Gelu, the king of elves, disagreed. He felt no longer be trusted by elves and he sweared to leave Avlee and return as conqueror. His hippogryphs prepare for revenge anytime.",
+			"name" : "Solendore",
+			"biography" : "Solendore used to become a bandit and smuggler in Ravenshore, he joined the pirates for making a living. He eventually betrayed them after the pirates were defeated by local resistance forces and Burton trailblazers. Now he stole a ship to get Harmondale and settle down here. He tamed these giant mantises, just as he had tamed stormbirds before.",
 			"specialty" :
 			{
-				"description" : "{Hippogryphs}\r\n\r\nIncreases Speed of any Hippogryphs or Grim Hippogryphs by 1 and their Attack and Defense skills by 5% for every 5 levels (rounded up).",
+				"description" : "Increases Speed of any Mantises or Golden Mantises by 1 and their Attack and Defense skills by 5% for every level (rounded up).",
 				"tooltip" : "Bonus: creature",
-				"name" : "Hippogryphs"
+				"name" : "Mantises"
 			}
 		},
 
@@ -20,8 +20,8 @@
 		{
 			"specialtySmall" : "preserve/heroes/julian/UN32hipp.bmp",
 			"specialtyLarge" : "preserve/heroes/julian/UN44hipp.bmp",
-			"large" : "preserve/heroes/julian/HPL001GN.png",
-			"small" : "preserve/heroes/julian/HPS001GN.png"
+			"large" : "preserve/heroes/julian/HPL001GN.bmp",
+			"small" : "preserve/heroes/julian/HPS001GN.bmp"
 		},
 		
 
@@ -55,7 +55,7 @@
 			}
 		],
 		
-		"specialty" : {
+				"specialty" : {
 			"creature" : "hippogryph"
 		}
 	}

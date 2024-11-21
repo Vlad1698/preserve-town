@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.2.4",
+	"version" : "1.6.0",
 	"modType" : "Town",	
 	"compatibility":
 	{
@@ -86,16 +86,25 @@
 		"config/preserve/NewOldSpells/wolverineHeart.json",
 		"config/preserve/NewOldSpells/scout.json",
 		"config/preserve/NewOldSpells/symbiosis.json",
-		"config/preserve/NewOldSpells/summonRaven.json",
-		"config/preserve/NewOldSpells/moat.json"
+		"config/preserve/NewOldSpells/leshyBolt.json",
+		"config/preserve/NewOldSpells/mantisReduce.json",
+		"config/preserve/NewOldSpells/symbActive.json",
+		"config/preserve/NewOldSpells/choir.json",
+		"config/preserve/NewOldSpells/forestPower.json",
+		"config/preserve/NewOldSpells/summonRaven.json"
+	],
+	"skills" : [
+		"config/preserve/skills/luck.json"
 	],
 	 "objects":
     [
-		"config/preserve/dwellings.json"
+		"config/preserve/dwellings.json",
+		"config/preserve/objects/mysticalBearBonus.json"
     ],
 	"changelog" :
     {
-        "1.2.3"   : [ "Polish translation by FallainBlack" ],
+        "1.6.0"   : [ "Remade by original author" ],
+		"1.2.3"   : [ "Polish translation by FallainBlack" ],
 		"1.2.3"   : [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
 		"1.2.2"   : [ "Added the creatures' stackExp and fixed the commander" ],
 		"1.2.1"   : [ "Improved background" ],

@@ -3,13 +3,13 @@
 	"wolverineHeart":
 	{
 		"type": "ability", 
-		"name": "Rage of Forest",
+		"name": "Magic Barrier",
 		"school":
 		{
 			"air": false,
 			"earth": false,
 			"fire": false,
-			"water": true
+			"water": false
 		},
 		"level": 5,
 		"power": 10,
@@ -26,7 +26,7 @@
 			"affect":["NewOldSpells/wolverine.def"]
 		},
  
-		"flags" : {"positive": true},
+		"flags" : {"positive": true,"nonMagical":true},
  
  
 		"graphics":
@@ -54,7 +54,7 @@
 			{
 				"power": 10,
 				"aiValue": 12,
-				"range": "0-16",
+				"range": "0",
 				"targetModifier":
 				{
 					"smart": true
@@ -62,133 +62,85 @@
 			},
 			"none":
 			{
-				"description": "Old name: Wolverine Heart",
+				"description": "{Magic Barrier}\r\n\r\n sprite dragon used",
 	 
 				"cost": 0,
 	 
 				"effects":{
-					"forgetful" : {
-						"type" : "FORGETFULL",
-						"val" : 3,
-						"duration" : "PERMANENT"
+					"castMisfortune" :
+					{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.symbActive",
+						"val" : 100
 					},
-					"attack" : {
-						"val" : 5,
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.attack",
-						"duration" : "PERMANENT"
-					},
-					"defence" : {
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.defence",
-						"val" : -5,
-						"valueType" : "ADDITIVE_VALUE",
-						"duration" : "PERMANENT"
-					},
-					"stacksSpeed" : {
-						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "PERMANENT"
+					"blindImmunity" : 
+					{
+						"type" : "SPELL_IMMUNITY",
+						"subtype" : "spell.symbActive",
+						"addInfo" : 1
 					}
 				}
 			},
 			"basic":
 			{
-				"description": "Old name: Wolverine Heart",
+				"description": "{Magic Barrier}\r\n\r\n sprite dragon used",
 	 
 				"cost": 0,
 	 
 				"effects":{
-					"forgetful" : {
-						"type" : "FORGETFULL",
-						"val" : 3,
-						"duration" : "PERMANENT"
+					"castMisfortune" :
+					{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.symbActive",
+						"val" : 100
 					},
-					"attack" : {
-						"val" : 5,
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.attack",
-						"duration" : "PERMANENT"
-					},
-					"defence" : {
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.defence",
-						"val" : -5,
-						"valueType" : "ADDITIVE_VALUE",
-						"duration" : "PERMANENT"
-					},
-					"stacksSpeed" : {
-						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "PERMANENT"
+					"blindImmunity" : 
+					{
+						"type" : "SPELL_IMMUNITY",
+						"subtype" : "spell.symbActive",
+						"addInfo" : 1
 					}
 				}
 			},
 			"advanced":
 			{
-				"description": "Old name: Wolverine Heart",
+				"description": "{Magic Barrier}\r\n\r\n sprite dragon used",
 	 
 				"cost": 0,
 	 
 				"effects":{
-						"forgetful" : {
-						"type" : "FORGETFULL",
-						"val" : 3,
-						"duration" : "PERMANENT"
+					"castMisfortune" :
+					{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.symbActive",
+						"val" : 100
 					},
-					"attack" : {
-						"val" : 5,
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.attack",
-						"duration" : "PERMANENT"
-					},
-					"defence" : {
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.defence",
-						"val" : -5,
-						"valueType" : "ADDITIVE_VALUE",
-						"duration" : "PERMANENT"
-					},
-					"stacksSpeed" : {
-						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "PERMANENT"
+					"blindImmunity" : 
+					{
+						"type" : "SPELL_IMMUNITY",
+						"subtype" : "spell.symbActive",
+						"addInfo" : 1
 					}
 				}
 			},
 			"expert":
 			{
-				"description": "Old name: Wolverine Heart",
+				"description": "{Magic Barrier}\r\n\r\n sprite dragon used",
 	 
 				"cost": 0,
 	 
 				"effects":{
-					"forgetful" : {
-						"type" : "FORGETFULL",
-						"val" : 3,
-						"duration" : "PERMANENT"
+					"castMisfortune" :
+					{
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.symbActive",
+						"val" : 100
 					},
-					"attack" : {
-						"val" : 5,
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.attack",
-						"duration" : "PERMANENT"
-					},
-					"defence" : {
-						"type" : "PRIMARY_SKILL",
-						"subtype" : "primarySkill.defence",
-						"val" : -5,
-						"valueType" : "ADDITIVE_VALUE",
-						"duration" : "PERMANENT"
-					},
-					"stacksSpeed" : {
-						"addInfo" : 0,
-						"type" : "STACKS_SPEED",
-						"val" : 2,
-						"duration" : "PERMANENT"
+					"blindImmunity" : 
+					{
+						"type" : "SPELL_IMMUNITY",
+						"subtype" : "spell.symbActive",
+						"addInfo" : 1
 					}
 				}
 			}

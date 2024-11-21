@@ -2,7 +2,7 @@
     "core:creatureGeneratorCommon" : {
         "types" : {
             "preserveLevel1" : {
-                "name" : "Thatched Hut",
+                "name" : "Gnome Village",
                 "creatures" : [[ "halflings" ]],
 
                 "sounds": {
@@ -16,7 +16,7 @@
                 }
             },
             "preserveLevel2" : {
-                "name" : "Stone Cavern",
+                "name" : "Wolf Den",
                 "creatures" : [[ "treelurker" ]],
 
                 "templates" : {
@@ -27,7 +27,7 @@
                 }
             },
             "preserveLevel3" : {
-                "name" : "Hive",
+                "name" : "Tiger Den",
                 "creatures" : [[ "magiceye" ]],
 
                 "templates" : {
@@ -38,7 +38,7 @@
                 }
             },
             "preserveLevel4" : {
-                "name" : "Stonehenge",
+                "name" : "Conservatory",
                 "creatures" : [[ "foxdruid" ]],
                 "templates" : {
                     "default" : {
@@ -48,7 +48,7 @@
                 }
             },
             "preserveLevel5" : {
-                "name" : "Perch",
+                "name" : "Mantis Nest",
                 "creatures" : [[ "hippogryph" ]],
                 "guards" : [
                     { "amount" : 9, "type" : "hippogryph" }
@@ -61,7 +61,7 @@
                 }
             },
             "preserveLevel6" : {
-                "name" : "Arcane Garden",
+                "name" : "Altar of Forest",
                 "creatures" : [[ "fairybear" ]],
                 "guards" : [
                     { "amount" : 6, "type" : "fairybear" }
@@ -74,7 +74,7 @@
                 }
             },
             "preserveLevel7" : {
-                "name" : "Forest of Life",
+                "name" : "Golden Loft",
                 "creatures" : [[ "treant" ]],
                 "guards" : [
                     { "amount" : 3, "type" : "treant" }

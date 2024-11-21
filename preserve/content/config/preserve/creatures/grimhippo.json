@@ -1,8 +1,8 @@
 {
   "grimhippo": {
     "name": {
-      "plural": "Grim Hippogryphs",
-      "singular": "Grim Hippogryph"
+      "plural": "Golden Mantises",
+      "singular": "Golden Mantis"
     },
     "advMapAmount": {
  "max" : 12,
@@ -10,7 +10,7 @@
     },
     "faction": "preserve",
     "aiValue": 1360,
-    "attack": 15,
+    "attack": 13,
     "cost": {
       "gold": 700
     },
@@ -37,37 +37,27 @@
     "hitPoints": 55,
     "level": 5,
     "sound": {
-      "attack": "preserve/S172ATTK.wav",
-      "defend": "preserve/S172DFND.wav",
-      "killed": "preserve/S172KILL.wav",
-      "move": "preserve/S172MOVE.wav",
-      "wince": "preserve/S172WNCE.wav"
-    },
-    "speed": 11,
+			"attack": "preserve/S171ATTK.wav",
+			"defend": "preserve/S171DFND.wav",
+			"killed": "preserve/S171KILL.wav",
+			"move": "preserve/S171MOVE.wav",
+			"wince": "preserve/S171WNCE.wav"
+		},
+    "speed": 12,
     "abilities": {
       "canFly": {
-        "type": "FLYING", "subtype" : "movementFlying"
+        "type": "FLYING"
       },
-      "regenerates" :
-	  {
-			"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE"
-      },
-      "symbiosis" :
+      "reduceDefence" :
 			{
-				"type" : "SPELLCASTER",
-				"subtype" : "spell.symbiosis",
-				"val" : 2
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
 			},
-			"castLength" :
+			"castMisfortune" :
 			{
-				"type" : "SPECIFIC_SPELL_POWER",
-				"subtype" : "spell.symbiosis",
-				"val" : 50
-			},
-			"castsCount" :
-			{
-				"type" : "CASTS",
-				"val" : 1
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.mantisReduce",
+				"val" : 20
 			}
     },
 		"stackExperience" :
@@ -76,42 +66,36 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			}
 		]
   }

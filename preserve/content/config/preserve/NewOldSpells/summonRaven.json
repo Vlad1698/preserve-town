@@ -2,7 +2,7 @@
 	"summonRaven":
 	{
 		"type": "ability", 
-		"name": "Summon Ravens",
+		"name": "Summon Raven",
 		"school":
 		{
 			"air": false,
@@ -57,7 +57,7 @@
 			},
 			"none":
 			{
-				"description": "{Summon Raven}\r\n\r\nSummon Raven.",
+				"description": "Summon Raven",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -66,7 +66,7 @@
 			},
 			"basic":
 			{
-				"description": "{Summon Raven}\r\n\r\nSummon Raven.",
+				"description": "Summon Raven",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -75,7 +75,7 @@
 			},
 			"advanced":
 			{
-				"description": "{Summon Raven}\r\n\r\nSummon Raven.",
+				"description": "Summon Raven",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -84,7 +84,7 @@
 			},
 			"expert":
 			{
-				"description": "{Summon Raven}\r\n\r\nSummon Raven.",
+				"description": "Summon Raven",
 	 
 				"cost": 0,
 				"aiValue": 12,

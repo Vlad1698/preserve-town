@@ -7,12 +7,12 @@
 		"texts" :
 		{
 			"name" : "Theoretus",
-			"biography" : "Due to his good unicorn companion was recruited by the army, Theoretus decided to leave Avlee. The unreasonable elves soldiers made him angry, but he did not have the ability to resist them. After he had left Avlee, he found a new creature in the jungle. Now he becomes the friend of the faerie bear, and he also believes he can meet the old friend again.",
+			"biography" : "Due to his good unicorn companion was recruited by the army, Theoretus decided to leave Avlee. The unreasonable elves soldiers made him angry, but he did not have the ability to resist them. After he had left Avlee, he found the white tigers in the jungle. Now he becomes the friend of the tigers, and he also believes he can meet the old friend again.",
 			"specialty" :
 			{
-				"description" : "{Faerie Bear}\r\n\r\nIncreases Speed of any Faerie Bear or Mistical Bear by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up).",
+				"description" : "Increases Speed of any Tigers or White Tigers by 1 and their Attack and Defense skills by 5% for every 3 levels (rounded up).",
 				"tooltip" : "Bonus: creature",
-				"name" : "Faerie Bear"
+				"name" : "Tigers"
 			}
 		},
 		
@@ -32,9 +32,9 @@
 				"min" : 20
 			},
 			{
-				"creature" : "treelurker",
-				"max" : 8,
-				"min" : 5
+				"creature" : "magiceye",
+				"max" : 5,
+				"min" : 4
 			},
 			{
 				"creature" : "magiceye",
@@ -56,7 +56,7 @@
 		],
 		
 		"specialty" : {
-			"creature" : "fairybear"
+			"creature" : "magiceye"
 		}
 	}
 }

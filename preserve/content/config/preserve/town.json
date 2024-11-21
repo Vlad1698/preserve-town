@@ -1,6 +1,6 @@
 {
 	"preserve" : {
-		"alignment" : "neutral",
+		"alignment" : "good",
 		"boat" : "boatFortress",
 		"creatureBackground" : { "120px" : "preserve/creature-bg-120px.bmp", "130px" : "preserve/creature-bg-130px.bmp" },
 		"name" : "Preserve",
@@ -282,8 +282,8 @@
 				},
 				"horde1" :
 				{
-					"description" : "The Fortune Circle will increase Centamonth Hunter production by 8 per week.",
-					"name" : "Fortune Circle",
+					"description" : "The Stone Arches will increase Gnome production by 8 per week.",
+					"name" : "Stone Arches",
 					"cost" : 
 					{
 						"gold" : 1000
@@ -294,8 +294,8 @@
 				},
 				"horde1Upgr" :
 				{
-					"description" : "The Fortune Circle will increase Centamonth Thrower production by 8 per week.",
-					"name" : "Fortune Circle",
+					"description" : "The Stone Arches will increase Elder Gnome production by 8 per week.",
+					"name" : "Stone Arches",
 					"cost" : 
 					{
 						"gold" : 1000
@@ -313,40 +313,98 @@
 				},
 				"special1" : 
 				{
-					"description" : "The Totem of Jungle increases the Defense by +1 for visiting heroes, and gives extra 10% for learning skills (not working yet)",
-					"name" : "Totem of Jungle",
-					"type" : "defenceVisitingBonus",
+					"description" : "Druid's Academy allows you to learn different nine skills randomly for a small cost.",
+					"name" : "Druid's Academy",
+					"manualHeroVisit" : true,
+					"configuration" : {
+					"visitMode" : "hero",
+					"variables" : {
+						"secondarySkill" : {
+							"gainedSkill" : { 
+								"anyOf" : ["airMagic", "waterMagic", "earthMagic", "pathfinding","luck","sorcery","intelligence","scholar","mysticism"]
+							}
+						}
+					},
+					"visitLimiter" : {
+					"secondary" : {
+						"@gainedSkill" : 1
+					}
+					},
+					"rewards" :
+					[    
+                    {
+						"secondary" : {
+							"@gainedSkill" : 1
+						},
+						"resources" : {
+							"gold" : -1000
+						},
+						"limiter": 
+						{
+							"canLearnSkills" : true,
+							"noneOf" : [
+								{
+									"secondary" : {
+										"@gainedSkill" : 1
+									}
+								}
+							],
+							"resources" : {"gold" : 1000}
+						},
+						"message": "{Druid's Academy}\r\n\r\nYou walk into the academy and communicate with a group of scholars. After talking to you, one of the scholars learns that you need help. If you donate 1,000 gold to the academy, he will teach you a skill."
+                    }
+
+                ],
+				"onSelectMessage" : "{Druid's Academy}\r\n\r\nYou walk into the academy and communicate with a group of scholars. After talking to you, one of the scholars learns that you need help. If you donate 1,000 gold to the academy, he will teach you a skill.",
+                "onVisitedMessage": "{Druid's Academy}\r\n\r\nYou walk into the academy and communicate with a group of scholars. After one of the scholars talked to you, he found that you had long surpassed him in the field he was good at. In order to ease his embarrassment, you decided to leave.",
+				"onEmptyMessage": "{Druid's Academy}\r\n\r\nYou walk into the academy and communicate with a group of scholars. They invited you to attend the next academic seminar, but you declined their offer.",
+				//"resetDuration" : 7,      
+				"canRefuse": true,
+				"selectMode" : "selectPlayer"
+					},
+				"requires" : [ "mageGuild1" ],
 					"cost" : 
 					{
 						"gems" : 5,
-						"gold" : 1000
+						"crystal" : 5,
+						
+						"gold" : 2000
 					},
-					"requires" : [ "allOf", ["tavern"], ["fort"], ["townHall"], ["special3"] ]
-//					"id" : 17
-				},	
+					"id" : 17
+				},
 				"special3" : 
 				{
-					"description" : "The Rainbow can give +1 luck for visiting heroes once a week (not working yet). Now adds +2 luck to garrison heroes.",
+					"description" : "The Rainbow can give +1 luck for visiting heroes once a week. ",
 					"name" : "Rainbow",
-					"type" : "fountainOfFortune",
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "The air in the dense forest is extra fresh after a heavy rain, and you also see a beautiful rainbow in the swaying shadows of the trees, which is a sign of good luck.",
+								"bonuses" : [ { "type" : "LUCK",  "val" : 1, "duration" : "ONE_WEEK"} ]
+							}
+						]
+					},
 					"cost" : 
 					{
-						"gold" : 1000
+						"gold" : 1000,
+						"gems" : 2
 					},
 					"id" : 22
-				},	
+				},		
 				"grail" :
 				{
-					"description" : "The presence of the Spirit of Life increases weekly creature generation by 50%, provides your empire with an additional 5000 gold each day, and increases four rare resouces production by 3.",
+					"description" : "The presence of the Spirit of Life increases weekly creature generation by 50%, provides your empire with an additional 5000 gold each day, and increases four rare resouces production by 3. It also gives your heroes +2 luck.",
 					"name" : "Spirit of Life",
 					"produce": { "gold": 5000, "gems": 3, "crystal": 3,"sulfur": 3,"mercury": 3 },
+					"bonuses": [ { "type": "LUCK", "val": 2, "propagator": "PLAYER_PROPAGATOR" } ],
 					"id" : 26,
 					"mode" : "grail"
 				},
 				"dwellingLvl1" :
 				{
-					"description" : "The Thatched Hut allows you to recruit Centamonth Hunters.",
-					"name" : "Thatched Hut",
+					"description" : "The Gnome Village allows you to recruit Gnomes.",
+					"name" : "Gnome Village",
 					"cost" : 
 					{
 						"gold" : 500,
@@ -357,8 +415,8 @@
 				},
 				"dwellingLvl2" :
 				{
-					"description" : "The Stone Cavern allows you to recruit Tree Lurkers.",
-					"name" : "Stone Cavern",
+					"description" : "The Wolf Den allows you to recruit Wolves.",
+					"name" : "Wolf Den",
 					"cost" : 
 					{
 						"gold" : 1000,
@@ -369,33 +427,33 @@
 				},
 				"dwellingLvl3" :
 				{
-					"description" : "The Hive allows you to recruit Wasps.",
-					"name" : "Hive",
+					"description" : "The Tiger Den allows you to recruit Tigers.",
+					"name" : "Tiger Den",
 					"cost" : 
 					{
 						"gold" : 1500,
-						"wood" : 5,
+						"wood" : 10,
 						"ore" : 5
 					},
-					"requires" : ["allOf", ["mageGuild1"], ["dwellingLvl1"] ],
+					"requires" : ["allOf", ["mageGuild1"], ["dwellingLvl2"] ],
 					"id" : 32
 				},
 				"dwellingLvl4" :
 				{
-					"description" : "The Stonehenge allows you to recruit Druids.",
-					"name" : "Stonehenge",
+					"description" : "The Conservatory allows you to recruit Waspworts.",
+					"name" : "Conservatory",
 					"cost" : 
 					{
 						"gold" : 2000,
-						"ore" : 10
+						"ore" : 15
 					},
-					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl3"] ],
+					"requires" : [ "allOf", ["mageGuild1"], ["dwellingLvl2"] ],
 					"id" : 33
 				},
 				"dwellingLvl5" :
 				{
-					"description" : "The Perch allows you to recruit Hippogryphs.",
-					"name" : "Perch",
+					"description" : "The Mantis Nest allows you to recruit Mantises.",
+					"name" : "Mantis Nest",
 					"cost" : 
 					{
 						"gold" : 3000,
@@ -406,8 +464,8 @@
 				},
 				"dwellingLvl6" :
 				{
-					"description" : "The Arcane Garden allows you to recruit Faerie Bears.",
-					"name" : "Arcane Garden",
+					"description" : "The Altar of Forest allows you to recruit Forest Druids.",
+					"name" : "Altar of Forest",
 					"cost" : 
 					{
 						"gold" : 4000,
@@ -416,13 +474,13 @@
             "crystal": 5,
             "gems": 5
 					},
-					"requires" : [ "dwellingLvl5" ],
+					"requires" : [ "dwellingLvl4" ],
 					"id" : 35
 				},
 				"dwellingLvl7" :
 				{
-					"description" : "The Forest of Life allows you to recruit Treants.",
-					"name" : "Forest of Life",
+					"description" : "The Golden Loft allows you to recruit Forest Dragons.",
+					"name" : "Golden Loft",
 					"cost" : 
 					{
             "gold": 15000,
@@ -435,8 +493,8 @@
 				},
 				"dwellingUpLvl1" :
 				{
-					"description" : "The Upg. Thatched Hut allows you to recruit Centamonth Throwers.",
-					"name" : "Upg. Thatched Hut",
+					"description" : "The Upg. Gnome Village allows you to recruit Elder Gnomes.",
+					"name" : "Upg. Gnome Village",
 					"cost" :
 					{
 						"gold" : 1000
@@ -447,53 +505,53 @@
 				},
 				"dwellingUpLvl2" :
 				{
-					"description" : "The Upg. Stone Cavern allows you to recruit Cave Leapers.",
-					"name" : "Upg. Stone Cavern",
+					"description" : "The Upg. Wolf Den allows you to recruit Dire Wolves.",
+					"name" : "Upg. Wolf Den",
 					"cost" : 
 					{
 						"gold" : 1500,
 						"wood" : 2,
-            "ore": 2,
-            "crystal": 2
+						"ore": 2,
 					},
 					"id" : 38,
 					"upgrades" : "dwellingLvl2"
 				},
 				"dwellingUpLvl3" :
 				{
-					"description" : "The Upg. Hive allows you to recruit Hornets.",
-					"name" : "Upg. Hive",
+					"description" : "The Upg. Tiger Den allows you to recruit White Tigers.",
+					"name" : "Upg. Tiger Den",
 					"cost" : 
 					{
 						"gold" : 1000,
 						"ore" : 5,
-						"sulfur" : 5
+						"wood" : 5
 					},
 					"id" : 39,
+					"requires" : [ "dwellingUpLvl2" ],
 					"upgrades" : "dwellingLvl3"
 				},
 				"dwellingUpLvl4" :
 				{
-					"description" : "The Upg. Stonehenge allows you to recruit High Druids.",
-					"name" : "Upg. Stonehenge",
+					"description" : "The Upg. Conservatory allows you to recruit Venom Waspworts.",
+					"name" : "Upg. Conservatory",
 					"cost" : 
 					{
 						"gold" : 2000,
-            "ore": 5,
-            "crystal": 5,
-            "mercury": 5
+						"ore": 5,
+						"crystal": 5,
+						"mercury": 5
 					},
 					"id" : 40,
 					"upgrades" : "dwellingLvl4"
 				},
 				"dwellingUpLvl5" :
 				{
-					"description" : "The Upg. Perch allows you to recruit Grim Hippogryphs.",
-					"name" : "Upg. Perch",
+					"description" : "The Upg. Mantis Nest allows you to recruit Golden Mantises.",
+					"name" : "Upg. Mantis Nest",
 					"cost" : 
 					{
 						"gold" : 2500,
-						"wood" : 10,
+						"wood" : 15,
 						"gems" : 5
 					},
 					"id" : 41,
@@ -501,29 +559,29 @@
 				},
 				"dwellingUpLvl6" :
 				{
-					"description" : "The Upg. Arcane Garden allows you to recruit Mystical Bears.",
-					"name" : "Upg. Arcane Garden",
+					"description" : "The Upg. Altar of Forest allows you to recruit Greater Druids.",
+					"name" : "Upg. Altar of Forest",
 					"cost" : 
 					{
 						"gold" : 3000,
 						"ore" : 5,
 						"sulfur": 3,
-            "crystal": 3,
-            "gems": 3
+						"crystal": 3,
+						"gems": 3
 					},
 					"id" : 42,
 					"upgrades" : "dwellingLvl6"
 				},
 				"dwellingUpLvl7" :
 				{
-					"description" : "The Upg. Forest of Life allows you to recruit Ancient Treants.",
-					"name" : "Upg. Forest of Life",
+					"description" : "The Upg. Golden Loft allows you to recruit Sprite Dragons.",
+					"name" : "Upg. Golden Loft",
 					"cost" : 
 					{
 						"gold": 15000,
-            "wood": 5,
+						"wood": 5,
 						"ore" : 5,
-						"gems" : 25
+						"gems" : 20
 					},
 					"id" : 43,
 					"requires" : [ "mageGuild2" ],
@@ -662,10 +720,10 @@
 			],
 			"primaryResource" : "gems",
 			"siege" : {
-				"shooter" : "foxdruid",
-				"towerIconSmall" : "preserve/icons/arrowtowersmall",
-				"towerIconLarge" : "preserve/icons/arrowtowerslarge",
+				"shooter" : "fairybear",
 				"imagePrefix" : "preserve/siege/SGPR",
+				"towerIconSmall" : "preserve/icons/towerSmall",
+				"towerIconLarge" : "preserve/icons/towerLarge",
 				"gate" :
 				{
           "arch" : { "x" : 460, "y" : 220 },
@@ -679,27 +737,27 @@
 				"static" :
 				{
 					"background" : { "x" : 608, "y" : 46 },
-					"bottom" : { "x" : 510, "y" : 364 },
-					"top" : { "x" : 492, "y" : 103 }
+					"bottom" : { "x" : 510, "y" : 334 },
+					"top" : { "x" : 492, "y" : 83 }
 				},
 				"towers" :
 				{
 					"bottom" :
 					{
 						"battlement" : { "x" : 594, "y" : 511 },
-						"creature" : { "x" : 371, "y" : 298 },
+						"creature" : { "x" : 371, "y" : 297 },
 						"tower" : { "x" : 594, "y" : 511 }
 					},
 					"keep" :
 					{
 						"battlement" : { "x" : 736, "y" : 159 },
-						"creature" : { "x" : 544, "y" : -6 },
+						"creature" : { "x" : 539, "y" : -10 },
 						"tower" : { "x" : 736, "y" : 159 }
 					},
 					"top" :
 					{
 						"battlement" : { "x" : 566, "y" : 31 },
-						"creature" : { "x" : 341, "y" : -177 },
+						"creature" : { "x" : 341, "y" : -181 },
 						"tower" : { "x" : 565, "y" : 31 }
 					}
 				},
@@ -712,11 +770,17 @@
 				}
 			},
 			"structures" : {
-				"animatedWater" : {
+					"animatedWater" : {
 					"animation" : "preserve/town-screen/buildings/TBPREXT6",
 					"x" : 0,
 					"y" : 0,
 					"z" : 1
+				},
+				"animatedWater2" : {
+					"animation" : "preserve/town-screen/buildings/TBPREXT5",
+					"x" : 0,
+					"y" : 0,
+					"z" : 0
 				},
 				"mageGuild1" :
 				{
@@ -770,7 +834,7 @@
 					"border" : "preserve/town-screen/buildings-border/TOPRTVRN",
 					"x" : 0,
 					"y" : 0,
-					"z" : 2
+					"z"	: 2
 				},
 				"dock" :
 				{
@@ -843,7 +907,8 @@
 					"area" : "preserve/town-screen/buildings-area/TZPRmark",
 					"border" : "preserve/town-screen/buildings-border/TOPRmark",
 					"x" : 0,
-					"y" : 0
+					"y" : 0,
+					"z"	: 2
 				},
 				"resourceSilo" :
 				{
@@ -851,7 +916,8 @@
 					"area" : "preserve/town-screen/buildings-area/TZPRsilo",
 					"border" : "preserve/town-screen/buildings-border/TOPRsilo",
 					"x" : 0,
-					"y" : 0
+					"y" : 0,
+					"z"	: 3
 				},
 				"blacksmith" :
 				{
@@ -899,7 +965,7 @@
 					"y" : 0,
 					"z" : -1
 				},
-				"special3" : 
+				"special2" : 
 				{
 					"animation" : "preserve/town-screen/buildings/TBPRSpe2",
 					"area" : "preserve/town-screen/buildings-area/TZPRSpe2",
@@ -946,7 +1012,8 @@
 					"area" : "preserve/town-screen/buildings-area/TZPRdw_3",
 					"border" : "preserve/town-screen/buildings-border/TOPRdw_3",
 					"x" : 0,
-					"y" : 0
+					"y" : 0,
+					"z" : 4
 				},
 				"dwellingLvl5" :
 				{
@@ -985,8 +1052,8 @@
 					"animation" : "preserve/town-screen/buildings/TBPRup_1",
 					"area" : "preserve/town-screen/buildings-area/TZPRup_1",
 					"border" : "preserve/town-screen/buildings-border/TOPRup_1",
-					"x" : 86,
-					"y" : 116
+					"x" : 0,
+					"y" : 0
 				},
 				"dwellingUpLvl3" :
 				{
@@ -1002,7 +1069,8 @@
 					"area" : "preserve/town-screen/buildings-area/TZPRup_3",
 					"border" : "preserve/town-screen/buildings-border/TOPRup_3",
 					"x" : 0,
-					"y" : 0
+					"y" : 0,
+					"z" : 4
 				},
 				"dwellingUpLvl5" :
 				{
@@ -1027,11 +1095,11 @@
 					"border" : "preserve/town-screen/buildings-border/TOPRup_6",
 					"x" : 0,
 					"y" : 0
-				}
+				},
 			},
 		"tavernVideo" : "TAVERN.BIK",
 		"townBackground" : "preserve/town-screen/background.bmp",
-		"warMachine" : "firstAidTent",
+		"moatAbility" : "castleMoat",
 		"hallSlots" : [
 				[
 					[ "villageHall", "townHall", "cityHall", "capitol" ],
@@ -1046,7 +1114,7 @@
 				],
 				[ 
 					[ "special1" ],
-					[ "special3" ],
+					[ "special2" ],
 			    	[ "horde1", "horde1Upgr" ]
 				],
 				[

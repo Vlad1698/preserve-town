@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "High Druids",
-			"singular" : "High Druid"
+			"plural" : "Venom Waspworts",
+			"singular" : "Venom Waspwort"
 		},
 		"advMapAmount" :
 		{
@@ -23,7 +23,7 @@
 			 "max" : 12,
 			 "min" : 6
 		},
-		"defense" : 11,
+		"defense" : 10,
 		"fightValue" : 672,
 		"graphics" :
 		{
@@ -55,56 +55,42 @@
 			}
 		},
 		"growth" : 4,
-		"hitPoints" : 35,
+		"hitPoints" : 30,
 		"level" : 4,
-		"shots" : 12,
+		"shots" : 16,
 		"sound" :
 		{
-			"attack": "preserve/S170ATTK.wav",
-			"defend": "preserve/S170DFND.wav",
-			"killed": "preserve/S170KILL.wav",
-			"move": "preserve/S170MOVE.wav",
-			"wince": "preserve/S170WNCE.wav",
-			"shoot" : "preserve/S170SHOT.wav"
+			"attack": "preserve/S169ATTK.wav",
+			"defend": "preserve/S169DFND.wav",
+			"killed": "preserve/S169KILL.wav",
+			"move": "preserve/S169MOVE.wav",
+			"wince": "FIRESHIE",
+			"shoot" : "FDFLSHOT"
 		},
-		"speed" : 8,
+		"speed" : 6,
 		"abilities" :
 		{
 			"canShoot" :
 			{
 				"type" : "SHOOTER"
 			},
-      "noMeleePenalty": {
-        "type": "NO_MELEE_PENALTY"
-      },
-      "castsCure" :
-			{
-				"type" : "SPELLCASTER",
-				"subtype" : "spell.cure",
-				"val" : 2
+			"castsWeakness" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 100,
+				"addInfo" : [1,1,0]
 			},
-			"castsCount" :
-			{
-				"type" : "CASTS",
-				"val" : 3
+			"castsSlow" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.slow",
+				"val" : 100,
+				"addInfo" : [1,1,1]
 			},
-			"castRaven" :
-			{
-				"type" : "SPELL_BEFORE_ATTACK",
-				"addInfo" : [0, 2],
-				"subtype" : "spell.summonRaven",
-				"val" : 20
-			},
-			"spellpower" :
-			{
-				"type" : "CREATURE_SPELL_POWER",
-				"val" : 300
-			},	
-			"castLength" :
-			{
-				"type" : "SPECIFIC_SPELL_POWER",
-				"subtype" : "spell.cure",
-				"val" : 30
+			"castsDisruptingRay" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.poison",
+				"val" : 100,
+				"addInfo" : [1,1,2]
 			}
 		},
 		"stackExperience" :
@@ -113,42 +99,36 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :
@@ -178,7 +158,7 @@
 				"bonus" :
 				{
 					"type" : "ENCHANTED",
-					"subtype" : "spell.bloodlust", 
+					"subtype" : "spell.bloodlust"
 				},
 				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 3 ]			
 			},

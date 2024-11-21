@@ -10,9 +10,9 @@
 			"biography" : "Terence used be a ranger in Avlee. One day, he and his partners were attacked by a kind of strange creatures. Fortunately, he had not been killed by these creatures, and then he became the friend of them. Now he found this creature can be used in the battle.",
 			"specialty" :
 			{
-				"description" : "{Tree Lurkers}\r\n\r\nIncreases Speed of any Tree Lurkers or Cave Leapers by 1 and their Attack and Defense skills by 5% for every 5 levels (rounded up).",
+				"description" : "Increases Speed of any Wolves or Dire Wolves by 1 and their Attack and Defense skills by 5% for every 5 levels (rounded up).",
 				"tooltip" : "Bonus: creature",
-				"name" : "Tree Lurkers"
+				"name" : "Wolves"
 			}
 		},
 
@@ -28,9 +28,9 @@
 		"army" :
 		[
 			{
-				"creature" : "halflings",
-				"max" : 30,
-				"min" : 20
+				"creature" : "treelurker",
+				"max" : 8,
+				"min" : 5
 			},
 			{
 				"creature" : "treelurker",

@@ -1,12 +1,12 @@
 {
   "extra1benu": {
     "name": {
-      "plural": "Benus",
-      "singular": "Benu"
+      "plural": "Sun Birds",//not used now
+      "singular": "Sun Bird"
     },
     "advMapAmount": {
  "max" : 10,
- "min" : 4
+ "min" : 5
     },
     "faction": "preserve",
     "aiValue": 1360,
@@ -38,18 +38,18 @@
     "hitPoints": 140,
     "level": 7,
     "sound": {
-      "attack": "preserve/S172ATTK.wav",
-      "defend": "preserve/S172DFND.wav",
-      "killed": "preserve/S172KILL.wav",
-      "move": "preserve/S172MOVE.wav",
-      "wince": "preserve/S172WNCE.wav"
+      "attack": "ROCCATTK.wav",
+	"defend": "ROCCDFND.wav",
+			"killed": "ROCCKILL.wav",
+			"move": "ROCCMOVE.wav",
+			"wince": "ROCCWNCE.wav"
     },
     "speed": 16,
     "abilities": {
       "canFly": {
-        "type": "FLYING", "subtype" : "movementFlying"
+        "type": "FLYING"
       },
-	  "advancedSlayer" : { "type" : "KING", "val" : 2, "valueType" : "ADDITIVE_VALUE"},
+	  "advancedSlayer" : { "type" : "KING","val":0 },
 	  "fireBreath" :
 			{
 				"type" : "TWO_HEX_ATTACK_BREATH"
@@ -58,53 +58,43 @@
 			{
 				"type" : "MAGIC_MIRROR",
 				"val" : 15
-			},
-      "regenerates" :
-	  {
-			"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE"
-	  }
+			}
     },	
 		"stackExperience" :
 		[
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			}
 		]
   }

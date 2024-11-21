@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Hornets",
-			"singular" : "Hornet"
+			"plural" : "White Tigers",
+			"singular" : "White Tiger"
 		},
 		"advMapAmount" :
 		{
@@ -13,7 +13,7 @@
 		},
 		"faction" : "preserve",
 		"aiValue" : 381,
-		"attack" : 10,
+		"attack" : 9,
 		"cost" :
 		{
 			"gold" : 240
@@ -23,7 +23,8 @@
 			 "max" : 5,
 			 "min" : 4
 		},
-		"defense" : 5,
+		"defense" : 8,
+		"doubleWide": true,
 		"fightValue" : 374,
 		"graphics" :
 		{
@@ -37,32 +38,25 @@
 				"walk" : 1.25,
 				"attack" : 1,
 				"idle" : 10
-			}
-	     },
+			},
+	       },
 		"growth" : 7,
 		"hitPoints" : 25,
 		"level" : 3,
 		"sound" :
 		{
-			"attack": "preserve/S168ATTK.wav",
-			"defend": "preserve/S168DFND.wav",
-			"killed": "preserve/S168KILL.wav",
-			"move": "preserve/S168MOVE.wav",
-			"wince": "preserve/S168WNCE.wav"
+			"attack": "preserve/S167ATTK.wav",
+			"defend": "preserve/S167DFND.wav",
+			"killed": "preserve/S167KILL.wav",
+			"move": "preserve/S165MOVE.wav",
+			"wince": "preserve/S167WNCE.wav"
 		},
-		"speed" : 12,
+		"speed" : 8,
 		"abilities" :
 		{
-			"canFly" : 
+					"firstStrike" : 
 			{
-				"type" : "FLYING", "subtype" : "movementFlying"
-			},
-      "castMisfortune" :
-			{
-				"type" : "SPELL_AFTER_ATTACK",
-				"subtype" : "spell.misfortune",
-				"val" : 100,
-				"addInfo" : [1, 2]
+				"type" : "FIRST_STRIKE"
 			}
 		},
 		"stackExperience" :
@@ -71,42 +65,36 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :

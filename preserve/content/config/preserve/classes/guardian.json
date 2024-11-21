@@ -1,14 +1,14 @@
 {
 	"guardian" : {
 		"affinity" : "might",
-		"animation" : { "battle" : { "female" : "preserve/battle/heroes/CH21", "male" : "preserve/battle/heroes/CH20" } },
+		"animation" : { "battle" : { "female" : "preserve/battle/heroes/PREBA02", "male" : "preserve/battle/heroes/PREBA01" } },
 		"commander" : "fcommander",
 		"defaultTavern" : 5,
 		"faction" : "preserve",
 		"highLevelChance" : { "attack" : 30, "defence" : 30, "knowledge" : 20, "spellpower" : 20 },
-		"lowLevelChance" : { "attack" : 30, "defence" : 50, "knowledge" : 10, "spellpower" : 10 },
+		"lowLevelChance" : { "attack" : 30, "defence" : 35, "knowledge" : 20, "spellpower" : 15 },
 		"mapObject" : { "templates" : { "default" : { "animation" : "preserve/map/heroes/AH20_" } } },
-		"name" : "Guardian",
+		"name" : "Warden",
 		"primarySkills" : { "attack" : 1, "defence" : 3, "knowledge" : 1, "spellpower" : 1 },
 		"secondarySkills" : {
 			"pathfinding"  : 8,

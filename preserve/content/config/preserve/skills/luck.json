@@ -1,0 +1,49 @@
+{
+  "core:luck": {
+    "base" : {
+			"effects" : {
+				"main" : {
+					"type" : "LUCK",
+					"valueType" : "BASE_NUMBER"
+				},
+				"fourthEffect" :
+				{ 
+							"type" : "STACK_HEALTH",
+							"valueType" : "PERCENT_TO_BASE",
+							"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["preserve"]} ]
+				},
+				"fifthEffect" :
+				{ 
+							"type" : "CREATURE_DAMAGE",
+							"subtype" : "creatureDamageBoth",
+							"valueType" : "PERCENT_TO_BASE",
+							"limiters": [ {"type": "CREATURE_FACTION_LIMITER","parameters" : ["preserve"]} ]
+				}
+			}
+		},
+		"basic" : {
+			"description": "{Basic Luck}\n\nBasic Luck increases your hero's luck by 1.\n\nIt also gives the Preserve creature an additional 10% health points.",
+			"effects" : {
+				"main" : { "val" : 1 },
+				"fourthEffect" : { "val" : 10 },
+				"fifthEffect" : { "val" : 0 },
+			}
+		},
+		"advanced" : {
+			"description": "{Advanced Luck}\n\nAdvanced Luck increases your hero's luck by 2.\n\nIt also gives the Preserve creature an additional 20% health points.",
+			"effects" : {
+				"main" : { "val" : 2 },
+				"fourthEffect" : { "val" : 20 },
+				"fifthEffect" : { "val" : 0 },
+			}
+		},
+		"expert" : {
+			"description": "{Expert Luck}\n\nExpert Luck increases your hero's luck by 3.\n\nIt also gives the Preserve creature an additional 20% health points and 10% damage.",
+			"effects" : {
+				"main" : { "val" : 3 },
+				"fourthEffect" : { "val" : 20 },
+				"fifthEffect" : { "val" : 10 },
+			}
+		}
+  }
+}

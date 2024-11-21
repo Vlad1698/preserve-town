@@ -2,7 +2,7 @@
 	"scout":
 	{
 		"type": "ability", 
-		"name": "Shout",
+		"name": "Scout",
 		"school":
 		{
 			"air": false,
@@ -64,85 +64,65 @@
 			},
 			"none":
 			{
-				"description": "{Shout}",
+				"description": "{Scout}\r\n\r\n undefined",
 	 
 				"cost": 0, 
 				"effects" : {
 					"notActive" : {
+						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
-						]
-					},
-					"noRetaliation" : {
-						"type" : "NO_RETALIATION",
-						"duration" : [
-							"N_TURNS"
-						]
+						],
+						"turns": 1
 					}
 				}
 			},
 			"basic":
 			{
-				"description": "{Shout}",
+				"description": "{Scout}\r\n\r\n undefined",
 	 
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
+						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
-						]
-					},
-					"noRetaliation" : {
-						"type" : "NO_RETALIATION",
-						"duration" : [
-							"N_TURNS"
-						]
+						],
+						"turns": 1
 					}
 				}
 			},
 			"advanced":
 			{
-				"description": "{Shout}",
+				"description": "{Scout}\r\n\r\n undefined",
 	 
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
+						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
-						]
-					},
-					"noRetaliation" : {
-						"type" : "NO_RETALIATION",
-						"duration" : [
-							"N_TURNS"
-						]
+						],
+						"turns": 1
 					}
 				}
 			},
 			"expert":
 			{
-				"description": "{Shout}",
+				"description": "{Scout}\r\n\r\n undefined",
 	 
 				"cost": 0,
 				"effects" : {
 					"notActive" : {
+						"val" : 0,
 						"type" : "NOT_ACTIVE",
-						"subtype" : "spell.blind",
 						"duration" : [
 							"N_TURNS"
-						]
-					},
-					"noRetaliation" : {
-						"type" : "NO_RETALIATION",
-						"duration" : [
-							"N_TURNS"
-						]
+						],
+						"turns": 1
 					}
 				}
 			}

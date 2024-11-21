@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Fox Druids",
-			"singular" : "Fox Druid"
+			"plural" : "Waspworts",
+			"singular" : "Waspwort"
 		},
 		"advMapAmount" :
 		{
@@ -13,7 +13,7 @@
 		},
 		"faction" : "preserve",
 		"aiValue" : 574,
-		"attack" : 8,
+		"attack" : 9,
 		"cost" :
 		{
 			"gold" : 370
@@ -23,7 +23,7 @@
 			 "max" : 10,
 			 "min" : 6
 		},
-		"defense" : 10,
+		"defense" : 9,
 		"fightValue" : 553,
 		"graphics" :
 		{
@@ -65,19 +65,21 @@
 			"defend": "preserve/S169DFND.wav",
 			"killed": "preserve/S169KILL.wav",
 			"move": "preserve/S169MOVE.wav",
-			"wince": "preserve/S169WNCE.wav",
-			"shoot" : "preserve/S169SHOT.wav"
+			"wince": "FIRESHIE",
+			"shoot" : "FDFLSHOT"
 		},
-		"speed" : 6,
+		"speed" : 4,
 		"abilities" :
 		{
 			"canShoot" :
 			{
 				"type" : "SHOOTER"
 			},
-			"noMeleePenalty" :
-			{
-				"type" : "NO_MELEE_PENALTY"
+			"castsWeakness" : {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.weakness",
+				"val" : 100,
+				"addInfo" : [1,1]
 			}
 		},
 		"stackExperience" :
@@ -86,42 +88,36 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" :
@@ -133,7 +129,7 @@
 			{
 				"bonus" :
 				{
-					"type" : "SPELL_IMMUNITY",
+					"type" : "SPELL_IMMUNITY", 
 					"subtype" : "spell.dispelHelpful"
 				},
 				"values" : [ 0, 0, 0, 0, 1, 1, 1, 1, 1, 1 ]			
@@ -142,8 +138,7 @@
 				"bonus" :
 				{
 					"type" : "SPELL_AFTER_ATTACK",
-					"subtype" : "spell.stoneGaze",
-					"addInfo" : [ 3, 0 ]
+					"subtype" : "spell.stoneGaze"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},

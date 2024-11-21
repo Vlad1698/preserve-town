@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Hippogryphs",
-			"singular" : "Hippogryph"
+			"plural" : "Mantises",
+			"singular" : "Mantis"
 		},
 		"advMapAmount" :
 		{
@@ -13,7 +13,7 @@
 		},
 		"faction" : "preserve",
 		"aiValue" : 982,
-		"attack" : 14,
+		"attack" : 12,
 		"cost" :
 		{
 			"gold" : 600
@@ -47,22 +47,23 @@
 		],
 		"sound" :
 		{
-			"attack" : "preserve/S171ATTK.wav",
+			"attack": "preserve/S171ATTK.wav",
 			"defend" : "preserve/S171DFND.wav",
 			"killed" : "preserve/S171KILL.wav",
 			"move" : "preserve/S171MOVE.wav",
 			"wince" : "preserve/S171WNCE.wav"
- 		},
-		"speed" : 7,
+		},
+		"speed" : 9,
 		"abilities" :
 		{
 			"canFly" : 
 			{
-				"type" : "FLYING", "subtype" : "movementFlying"
+				"type" : "FLYING"
 			},
-			"regenerates" :
+		   "reduceDefence" :
 			{
-				"type" : "HP_REGENERATION", "val" : 100000, "valueType" : "ADDITIVE_VALUE"
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
 			}
 	    },
 		"stackExperience" :
@@ -71,42 +72,36 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			}
 		]
 	}

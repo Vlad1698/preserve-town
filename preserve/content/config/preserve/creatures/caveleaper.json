@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Cave Leapers",
-			"singular" : "Cave Leaper"
+			"plural" : "Dire Wolves",
+			"singular" : "Dire Wolf"
 		},
 		"advMapAmount" :
 		{
@@ -13,7 +13,6 @@
 		},
 		"faction" : "preserve",
 		"aiValue" : 228,
-		
 		"attack" : 8,
 		"cost" :
 		{
@@ -40,24 +39,19 @@
     },
     "doubleWide" : true,
 		"growth" : 8,
-		"hitPoints" : 16,
+		"hitPoints" : 15,
 		"level" : 2,
 		"sound" :
 		{
-			"attack": "preserve/S166ATTK.wav",
-			"defend": "preserve/S166DFND.wav",
-			"killed": "preserve/S166KILL.wav",
-			"move": "preserve/S166MOVE.wav",
-			"wince": "preserve/S166WNCE.wav"
+			"attack": "preserve/S165ATTK.wav",
+			"defend": "preserve/S165DFND.wav",
+			"killed": "preserve/S165KILL.wav",
+			"move": "preserve/S165MOVE.wav",
+			"wince": "preserve/S165WNCE.wav"
 		},
 		"speed" : 8,
     "abilities":
 		{
-			"extraRetaliation" :
-			{
-				"type" : "ADDITIONAL_RETALIATION",
-				"val" : 2
-			}
 		},
 		"stackExperience" :
  
@@ -65,42 +59,59 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
 			},
 			{
 				"bonus" :
 				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
+					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectAir"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.any"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
 			}
 		]
 		}	

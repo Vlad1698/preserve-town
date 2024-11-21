@@ -3,7 +3,7 @@
 	"summonBenu":
 	{
 		"type": "ability", 
-		"name": "Symbiosis Bird",
+		"name": "Summon Sun Bird",
 		"school":
 		{
 			"air": false,
@@ -58,7 +58,7 @@
 			},
 			"none":
 			{
-				"description": "{Symbiosis Bird}\r\n\r\nSummon Benu.",
+				"description": "NOT USED",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -67,7 +67,7 @@
 			},
 			"basic":
 			{
-				"description": "{Symbiosis Bird}\r\n\r\nSummon Benu.",
+				"description": "NOT USED",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -76,7 +76,7 @@
 			},
 			"advanced":
 			{
-				"description": "{Symbiosis Bird}\r\n\r\nSummon Benu.",
+				"description": "NOT USED",
 	 
 				"cost": 0,
 				"aiValue": 12,
@@ -85,7 +85,7 @@
 			},
 			"expert":
 			{
-				"description": "{Symbiosis Bird}\r\n\r\nSummon Benu.",
+				"description": "NOT USED",
 	 
 				"cost": 0,
 				"aiValue": 12,

@@ -3,8 +3,8 @@
 	{
 		"name" :
 		{
-			"plural" : "Tree Lurkers",
-			"singular" : "Tree Lurker"
+			"plural" : "Wolves",
+			"singular" : "Wolf"
 		},
 		"advMapAmount" :
 		{
@@ -39,7 +39,7 @@
     },
     "doubleWide" : true,
 		"growth" : 8,
-		"hitPoints" : 15,
+		"hitPoints" : 10,
 		"level" : 2,
 		"upgrades":
 		[
@@ -60,42 +60,58 @@
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
 			},
 			{
 				"bonus" :
 				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
+					"type" : "STACKS_SPEED"
 				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FLYING"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.airShield"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 2, 2, 3, 3, 3 ]			
 			}
 		]
 	}

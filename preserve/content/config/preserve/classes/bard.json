@@ -9,7 +9,7 @@
 		"lowLevelChance" : { "attack" : 20, "defence" : 20, "knowledge" : 30, "spellpower" : 30 },
 		"mapObject" : { "templates" : { "default" : { "animation" : "preserve/map/heroes/AH21_" } } },
 		"name" : "Bard",
-		"primarySkills" : { "attack" : 1, "defence" : 1, "knowledge" : 1, "spellpower" : 3 },
+		"primarySkills" : { "attack" : 0, "defence" : 1, "knowledge" : 1, "spellpower" : 3 },
 		"secondarySkills" : {
 			"pathfinding"  : 6,
 			"archery"      : 3,

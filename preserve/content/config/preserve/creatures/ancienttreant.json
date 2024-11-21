@@ -1,8 +1,8 @@
 {
   "ancienttreant": {
     "name": {
-      "plural": "Ancient Treants",
-      "singular": "Ancient Treant"
+      "plural": "Sprite Dragons",
+      "singular": "Sprite Dragon"
     },
     "advMapAmount": {
  "max" : 8,
@@ -10,16 +10,16 @@
     },
     "faction": "preserve",
     "aiValue": 9891,
-    "attack": 23,
+    "attack": 24,
     "cost": {
-      "gold": 5000,
+      "gold": 4000,
       "gems": 2
     },
     "damage": {
  "max" : 50,
  "min" : 35
     },
-    "defense": 28,
+    "defense": 24,
     "fightValue": 7569,
     "graphics": {
       "animation": "preserve/battle/creatures/C7UTre.def",
@@ -30,7 +30,7 @@
       "animationTime": {
         "walk": 1.5,
         "attack": 1,
-        "idle": 10.5
+        "idle": 10
       },
       "missile": {
         "projectile": "PCYCLBX.DEF",
@@ -48,87 +48,80 @@
     },
     "doubleWide": true,
     "growth": 1,
-    "hitPoints": 300,
+    "hitPoints": 240,
     "level": 7,
-    "shots": 12,
-    "sound": {
-      "attack": "preserve/S176ATTK.wav",
-      "defend": "preserve/S176DFND.wav",
-      "killed": "preserve/S176KILL.wav",
-      "move": "preserve/S176MOVE.wav",
-      "wince": "preserve/S176WNCE.wav"
-    },
-    "speed": 10,
-    "abilities": {
-      "binds": {
-        "type": "SPELL_AFTER_ATTACK",
-        "subtype": "spell.bind",
-        "val": 100,
-        "addInfo" : [1, 1]
-      },
-      "canShoot": {
-        "type": "SHOOTER"
-      },
-	  "advancedSlayer" : { "type" : "KING", "val" : 2, "valueType" : "ADDITIVE_VALUE" },
-      "noMeleePenalty": {
-        "type": "NO_MELEE_PENALTY"
-      },
-		"rageOfFrorest" :
+	"sound" :
+    {
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"shoot": "FAERSHOT.wav",
+			"wince": "FAERWNCE.wav"
+		},
+    "speed": 15,
+    "abilities":
+      {
+		"basicSlayer" : { "type" : "KING", "val": 1 },
+			"canFly" : 
 			{
-				"type" : "SPELLCASTER",
+				"type" : "FLYING"
+			},
+		"dragon" : 
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+		"prismBreath" :
+			{
+				"type" : "PRISM_HEX_ATTACK_BREATH"
+			},
+			"enchanted" : 	
+			{
+				"type" : "ENCHANTED",
 				"subtype" : "spell.wolverineHeart",
 				"val" : 2
-			},
-			"castsCount" :
-			{
-				"type" : "CASTS",
-				"val" : 1
-			},
-      "catapult": {
-        "type": "CATAPULT"
-      }
-    },	
+			}
+	    },	
 		"stackExperience" :
 		[
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.attack"
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},	
 			{
 				"bonus" :
 				{
-					"type" : "PRIMARY_SKILL",
-					"subtype" : "primarySkill.defence"
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+//					"valueType" : "BASE_NUMBER"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMax"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
 			{
 				"bonus" :
 				{
-					"type" : "CREATURE_DAMAGE",
-					"subtype" : "creatureDamageMin"
+					"subtype" : "creatureDamageBoth",
+					"type" : "CREATURE_DAMAGE"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-			},
-			{
-				"bonus" :
-				{
-					"valueType" : "PERCENT_TO_BASE",
-					"type" : "STACK_HEALTH"
-				},
-				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
 			},
 			{
 				"bonus" : 
@@ -141,9 +134,8 @@
 			{
 				"bonus" :
 				{
-					"subtype" : "earth",
-					"type" : "SPELL_DAMAGE_REDUCTION",
-					"val" : 100
+				"subtype" : "spellSchool.fire",
+				"type" : "SPELL_SCHOOL_IMMUNITY"
 				},
 				"values" : [ false, false, false, false, false, false, false, false, false, true ]
 			},

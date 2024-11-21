@@ -1,0 +1,255 @@
+{
+	"core:swanPond" : {
+		"types" : {
+			"swanPond" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{Swan Pond}\r\n\r\nChildhood stories said that a scarlet swan was a portent of good fortune. You decide to rest here for the remainder of the day. While you rest, Forest Druid's power is increased.",
+						"movePercentage" : 0,
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 67 },
+						{ 
+							"type" : "CASTS", 
+							"val" : 1,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"type" : "ENCHANTER",
+							"subtype" : "spell.forestPower",
+							"val" : 3,
+							"addInfo" : 3,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						}
+						],
+						"changeCreatures" : {
+							"fairybear" : "mysticalbear"
+						}
+					},
+					
+					{
+						"message" : 29,
+						"movePercentage" : 0,
+						"bonuses" : [ { "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 67 } ]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:idolOfFortune" : {
+		"types" : {
+			"idolOfFortune" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{Idol of Fortune}\r\n\r\nYou've found an ancient and weathered stone idol.  Kissing it is supposed to bring luck or happiness, so you do. While you rest, Forest Druid's power is increased.",
+						"movePercentage" : 0,
+						"bonuses" : [ 
+						{ "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 },
+						{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ,
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 62,
+						"limiter" : { 
+							"anyOf" : [
+								{ "dayOfWeek" : 1 },
+								{ "dayOfWeek" : 3 },
+								{ "dayOfWeek" : 5 }
+							]
+						},
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ]
+					},
+					{
+						"message" : 62,
+						"limiter" : { 
+							"anyOf" : [
+								{ "dayOfWeek" : 2 },
+								{ "dayOfWeek" : 4 },
+								{ "dayOfWeek" : 6 }
+							]
+						},
+						"bonuses" : [ { "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 } ]
+					},
+					{
+						"message" : 62,
+						"limiter" : { "dayOfWeek" : 7 },
+						"bonuses" : [ 
+							{ "type" : "MORALE", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 },
+							{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 68 }  
+						]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:faerieRing" : {
+		"types" : {
+			"faerieRing" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{Faerie Ring}\r\n\r\nYou enter a faerie ring, and your army gains luck for its next battle. While you rest, Forest Druid's power is increased.",
+						"movePercentage" : 0,
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 71 },
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 1,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"val" : 15,
+							"type" : "CREATURE_DAMAGE",
+							"subtype" : "creatureDamageBoth",
+							"valueType": "PERCENT_TO_BASE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 49,
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 71 } ]
+					}
+					
+				]
+			}
+		}
+	},
+	"core:fountainOfFortune" : {
+		"types" : {
+			"fountainOfFortune" : {
+				"rewards" : [
+					{
+						"limiter" : {
+							"anyOf" : [
+								{ "creatures" : [ { "type" : "fairybear", "amount" : 1} ] },
+								{ "creatures" : [ { "type" : "mysticalbear", "amount" : 1} ] }
+							]
+						},
+						"message" : "{Fountain of Fortune}\r\n\r\nAs you drink the bittersweet water, you feel your luck changing. While you rest, Forest Druid's power is increased.",
+						"movePercentage" : 0,
+						"bonuses" : [ 
+						{ "type" : "LUCK", "val" : 3, "duration" : "ONE_BATTLE", "description" : 69 },
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 2,
+							"subtype" : "primarySkill.attack",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{ 
+							"type": "PRIMARY_SKILL",
+							"val" : 2,
+							"subtype" : "primarySkill.defence",
+							"valueType" : "ADDITIVE_VALUE",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"type" : "ENCHANTED",
+							"subtype" : "spell.bless",
+							"val" : 2,
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						},
+						{
+							"type" : "STACKS_SPEED",
+							"val" : 1,
+							"valueType" : "BASE_NUMBER",
+							"duration" : "ONE_BATTLE",
+							"limiters": [ {"type":"CREATURE_TYPE_LIMITER","parameters": [ "fairybear", true ]} ]
+						}
+						]
+					},
+					
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 0, "max" : 25 },
+						"bonuses" : [ { "type" : "LUCK", "val" : -1, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 25, "max" : 50 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 1, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 50, "max" : 75 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 2, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					{
+						"message" : 55,
+						"appearChance" : { "min" : 75, "max" : 100 },
+						"bonuses" : [ { "type" : "LUCK", "val" : 3, "duration" : "ONE_BATTLE", "description" : 69 } ] // NOTE: strings has %s placeholder for morale value
+					},
+					
+				]
+			}
+		}
+	}
+}

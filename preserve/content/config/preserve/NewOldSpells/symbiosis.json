@@ -1,6 +1,6 @@
 //Symbiosis Ability for grim hippogryph whose function is resurrect or cure Treant and Ancient Treant by a troop of grim hippogryph
 {
-	"symbiosis":
+	"symbiosisPr":
 	{
 		"type": "ability",
 		"name": "Symbiosis",
@@ -24,14 +24,14 @@
 			"affect":[{"defName":"NewOldSpells/symbiosis.def","verticalPosition":"bottom"}]
 		},
 
-		"flags" : {"positive": true},
+		"flags" : {"positive": true, "nonMagical":true},
 
 		"graphics":
 		{
 			"iconBook": "NewOldSpells/USELESS.bmp",
 			"iconScroll": "NewOldSpells/USELESS2.bmp",
 			"iconScenarioBonus": "NewOldSpells/USELESS3.bmp",
-			"iconEffect": "NewOldSpells/USELESS4.bmp"
+			"iconEffect": "NewOldSpells/IN7.bmp"
 		},
 
 		"sounds":
@@ -43,9 +43,10 @@
 		{
 			"anyOf" :
 			{
-				"preserve:creature.ancienttreant":"absolute",
-				"preserve:creature.grimhippo":"absolute",
-				"preserve:creature.treant":"absolute"
+				"preserve:creature.caveleaper":"absolute",
+				"preserve:creature.misfortuneeye":"absolute",
+				"preserve:creature.fairybear":"absolute",
+				"preserve:creature.mysticalbear":"absolute"
 			}
 		},
 
@@ -55,9 +56,9 @@
 			{
 				"power": 10,
 				"aiValue": 12,
-				"range": "0-16",
+				"range": "0",
 
-				"description": "",
+				"description": "{Symbiosis}",
 
 				"cost": 0,
 
@@ -65,23 +66,28 @@
 				{
 					"smart": true
 				},
-				"battleEffects":
+				"effects":
 				{
-					"heal":
+				"wolfBonus" :
 					{
-						"type":"core:heal",
-						"healLevel":"resurrect",
-						"healPower":"permanent"//,
-						//"minFullUnits" : 1
+						"propagator" : 	"HERO",
+						"type" : "ADDITIONAL_ATTACK",
+						"val" : 1,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "caveleaper", false ]
+						} ],
 					},
-					"cure":
+					"tigerBonus" :
 					{
-						"type":"core:dispel",
-						//"indirect": true,
-						"optional":true,
-						"dispelNegative":true,
-						"dispelNeutral":false,
-						"dispelPositive":false
+						"propagator" : 	"HERO",
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.scout",
+						"val" : 20,
+						"limiters": [ {
+							"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "misfortuneeye", false ]
+						} ],
 					}
 				}
 			},
