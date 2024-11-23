@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.6.0",
+	"version" : "1.6.1",
 	"modType" : "Town",	
 	"compatibility":
 	{
@@ -103,6 +103,7 @@
     ],
 	"changelog" :
     {
+                "1.6.1"   : [ "Polish translation reworked and updated for new mod version by FallainBlack" ],
         "1.6.0"   : [ "Remade by original author" ],
 		"1.2.3"   : [ "Polish translation by FallainBlack" ],
 		"1.2.3"   : [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
