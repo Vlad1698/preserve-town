@@ -50,7 +50,7 @@
 				"battleEffects":{
 					"summon":{
 						"exclusive":true,
-						"id":"preserve:extra1benu",
+						"id":"preserve-town:extra1benu",
 						"permanent":false,
 						"type":"core:summon"
 					}

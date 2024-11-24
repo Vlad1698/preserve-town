@@ -701,7 +701,7 @@
 			},
 			"mageGuild" : 5,
 			
-			"musicTheme" : "music/factions/PreserveTown",
+			"musicTheme" : [ "music/factions/PreserveTown" ],
 			"names" : [
 				"Forbes",
 				"Braddon",

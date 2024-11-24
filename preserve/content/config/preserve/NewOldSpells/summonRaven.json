@@ -49,7 +49,7 @@
 				"battleEffects":{
 					"summon":{
 						"exclusive":true,
-						"id":"preserve:extra2raven",
+						"id":"preserve-town:extra2raven",
 						"permanent":false,
 						"type":"core:summon"
 					}

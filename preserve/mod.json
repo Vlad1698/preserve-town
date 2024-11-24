@@ -4,7 +4,7 @@
 	
 	"author" : "FF Team, mod : Turbanellos",
 	"contact" : "http://forum.vcmi.eu/index.php",
-	"version" : "1.6.1",
+	"version" : "1.6.2",
 	"modType" : "Town",	
 	"compatibility":
 	{
@@ -91,7 +91,9 @@
 		"config/preserve/NewOldSpells/symbActive.json",
 		"config/preserve/NewOldSpells/choir.json",
 		"config/preserve/NewOldSpells/forestPower.json",
-		"config/preserve/NewOldSpells/summonRaven.json"
+		"config/preserve/NewOldSpells/summonRaven.json",
+		"config/preserve/NewOldSpells/summonBenu.json",
+		"config/preserve/NewOldSpells/moat.json"
 	],
 	"skills" : [
 		"config/preserve/skills/luck.json"
@@ -103,16 +105,17 @@
     ],
 	"changelog" :
     {
-                "1.6.1"   : [ "Polish translation reworked and updated for new mod version by FallainBlack" ],
-        "1.6.0"   : [ "Remade by original author" ],
-		"1.2.3"   : [ "Polish translation by FallainBlack" ],
+		"1.6.2"   : [ "Fixed console warnings and errors" ],
+		"1.6.1"   : [ "Polish translation reworked and updated for new mod version by FallainBlack" ],
+		"1.6.0"   : [ "Remade by original author" ],
+		"1.2.4"   : [ "Polish translation by FallainBlack" ],
 		"1.2.3"   : [ "New town theme by Fabrice-TIERCELIN and AI Udio" ],
 		"1.2.2"   : [ "Added the creatures' stackExp and fixed the commander" ],
 		"1.2.1"   : [ "Improved background" ],
 		"1.2.0"   : [ "Update to vcmi-1.4" ],
 		"1.1.9"   : [ "Update to vcmi-1.3" ],
 		"1.1.8"   : [ "Chinese translation from https://www.h3wog.com/thread-77661-1-1.html" ],
-        "1.1.7"   : [ "Update to vcmi-1.2" ],
+		"1.1.7"   : [ "Update to vcmi-1.2" ],
 		"1.1.6"   : [ "Partial special building support" ],
 		"1.1.5"   : [ "New abilities and animations" ],
 		"1.1.2"   : [ "Small bug fixes", "New puzzle by acidchalk" ],
