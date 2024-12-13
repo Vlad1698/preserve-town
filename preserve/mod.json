@@ -17,6 +17,13 @@
 			"translation/preserve/chinese.json"
 		]
 	},
+	"russian" : {
+		"name" : "Заповедник",
+		"description" : "Новый город Заповедник, созданный Turbanellos, The Forgotten Fields, avatar, acidchalk",
+		"translations" : [
+			"translation/preserve/russian.json"
+		]
+	},
 	"german" : {
 		"name" : "Reservat",
 		"description" : "Neue Stadt erstellt von Turbanellos, The Forgotten Fields, avatar, acidchalk",
